@@ -1,0 +1,103 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+.controls{
+  padding: 2%;
+  color: black;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+
+.container-mixed{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.container-mixed:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container-mixed .mix,
+.container-mixed .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container-mixed .mix{
+  text-align: left;
+  margin-bottom: 2%;
+
+}
+
+.container-mixed .mix.category-1{
+  border-top: 2px solid black;
+}
+
+.container-mixed .mix.category-2{
+  border-top: 2px solid gray;
+}
+
+.container-mixed .mix:after{
+  content: attr(data-myorder);
+  color: black;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.container-mixed .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 420px){
+  .container-mixed .mix,
+  .container-mixed .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container-mixed .mix,
+  .container-mixed .gap{
+    width: 23.5%;
+  }
+}

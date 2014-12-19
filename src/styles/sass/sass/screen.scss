@@ -1,0 +1,82 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+/*INITIALIZE VARIABLES*/
+
+/*fonts & typography*/
+
+$Futura-font-stack: 'Futura PT', sans-serif;
+$Brandon-Grotesque-font-stack: 'Brandon Grotesque', sans-serif;
+$Open-Sans-font-stack: 'Open-Sans', sans-serif;
+
+$font-size-large:50px;
+$font-size-medium:30px;
+$font-size-small: 14px;
+$font-size-tiny:10px;
+
+/*colors*/
+$primary-color: hsla(176, 0%, 0%, 1);
+
+/*images*/
+$tiny-image:15%;
+	
+$default-image: 200px;
+
+/*padding*/
+$standard-padding:5px 5px 5px 5px;
+
+
+
+
+
+/*ASSIGN VARIABLES*/
+
+/*Main*/
+body {
+  display:block;
+  font: 100% $Brandon-Grotesque-font-stack;
+  color: $primary-color;
+}
+
+header {
+	height:15%;
+	min-height:150px;
+
+}
+
+
+/*Page Elements by Class*/
+
+/*Page Elements by ID*/
+
+#header-container{	
+	position:absolute;
+	font-size:$font-size-medium;
+}
+
+	#page-heading{
+		margin-top:5%;
+	}
+
+/*Images*/
+#logo-img{
+	width:$tiny-image;
+	max-width:550px;
+	padding:$standard-padding;
+}
+
+/*Typography*/
+.tk-futura-pt{
+	font-family:$Futura-font-stack;}
+.tk-brandon-grotesque{
+	font-family:$Brandon-Grotesque-font-stack;}
+.gf-open-sans{
+	font-family:$Open-Sans-font-stack;}
+
+
+

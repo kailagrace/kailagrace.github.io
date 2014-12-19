@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Kaila Manca Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="src/styles/css/normalize.css">
+  <link rel="stylesheet" href="src/styles/css/skeleton.css">
+
+
+  <!-- SCSS VIA COMPASS/SASS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="src/styles/stylesheets/sass/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="src/styles/stylesheets/sass/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link href="src/styles/stylesheets/sass/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+<!-- PLUGINS AND DEPENDENCIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- MIXITUP.JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="src/scripts/mixitup-master/src/mixitup.css" media="all" rel="stylesheet" type="text/css" />
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="src/images/Logo.png" />
+
+  <!--google fonts link-->
+  <link href='http://fonts.googleapis.com/css?Open+Sans:300italic,400italic,600italic,300,600,400' rel='stylesheet' type='text/css'> 
+      
+  <!--adobe typekit link-->
+  <script src="//use.typekit.net/vqh5gna.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+
+  <!-- import font awesome fonts-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="wrapper" id="main-page-wrapper">
+  <div class="container">
+    <header>
+    <div class="row u-full-width">
+      <div class="eight columns">
+        <div id="header-container">
+        <img id="logo-img" class="u-pull-left" alt="my personal brand logo- my initials, kgm" src="src/images/Logo.png">
+        <h1 class="tk-futura-pt u-max-full-width" id="page-heading">Kaila G. Manca</h1>
+      </div>
+      </div>
+      <div class="four columns">
+      </div>
+    </div>
+  </header>
+
+<div class="controls">
+
+  <label>Filter:</label>
+  
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter" data-filter=".category-1">Web &amp; Digital Design</button>
+  <button class="filter" data-filter=".category-2">Development</button>
+  <button class="filter" data-filter=".category-3">User Experience</button>
+  <button class="filter" data-filter=".category-4">Art</button>
+  
+  <label>Sort:</label>
+  
+  <button class="sort" data-sort="myorder:asc">Asc</button>
+  <button class="sort" data-sort="myorder:desc">Desc</button>
+</div>
+<div id="Container" class="container-mixed">
+  <div class="mix category-1" data-myorder="1"></div>
+  <div class="mix category-1" data-myorder="2"></div>
+  <div class="mix category-1" data-myorder="3"></div>
+  <div class="mix category-2" data-myorder="4"></div>
+  <div class="mix category-1" data-myorder="5"></div>
+  <div class="mix category-1" data-myorder="6"></div>
+  <div class="mix category-2" data-myorder="7"></div>
+  <div class="mix category-2" data-myorder="8"></div>
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+
+
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      $(function(){
+     $('#Container').mixItUp();
+});
+</script>
+
+</body>
+
+</html>
