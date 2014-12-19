@@ -74,14 +74,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*padding*/
 /*ASSIGN VARIABLES*/
 /*Main*/
-/* line 39, ../../sass/sass/screen.scss */
+/* line 39, ../../sass/stylesheets/screen.scss */
 body {
   display: block;
   font: 100% "Brandon Grotesque", sans-serif;
   color: black;
 }
 
-/* line 45, ../../sass/sass/screen.scss */
+/* line 45, ../../sass/stylesheets/screen.scss */
 header {
   height: 15%;
   min-height: 150px;
@@ -89,43 +89,43 @@ header {
 
 /*Page Elements by Class*/
 /*Page Elements by ID*/
-/* line 56, ../../sass/sass/screen.scss */
+/* line 56, ../../sass/stylesheets/screen.scss */
 #header-container {
   position: absolute;
   font-size: 30px;
 }
 
-/* line 61, ../../sass/sass/screen.scss */
+/* line 61, ../../sass/stylesheets/screen.scss */
 #page-heading {
   margin-top: 5%;
 }
 
 /*Images*/
-/* line 66, ../../sass/sass/screen.scss */
+/* line 66, ../../sass/stylesheets/screen.scss */
 #logo-img {
   width: 15%;
   max-width: 550px;
   padding: 5px 5px 5px 5px;
 }
 
-/* line 72, ../../sass/sass/screen.scss */
+/* line 72, ../../sass/stylesheets/screen.scss */
 img .thumb-img {
   max-width: 100%;
   min-width: 20%;
 }
 
 /*Typography*/
-/* line 77, ../../sass/sass/screen.scss */
+/* line 77, ../../sass/stylesheets/screen.scss */
 .tk-futura-pt {
   font-family: "Futura PT", sans-serif;
 }
 
-/* line 79, ../../sass/sass/screen.scss */
+/* line 79, ../../sass/stylesheets/screen.scss */
 .tk-brandon-grotesque {
   font-family: "Brandon Grotesque", sans-serif;
 }
 
-/* line 81, ../../sass/sass/screen.scss */
+/* line 81, ../../sass/stylesheets/screen.scss */
 .gf-open-sans {
   font-family: "Open-Sans", sans-serif;
 }

@@ -29,6 +29,13 @@
   <link href="src/styles/stylesheets/sass/print.css" media="print" rel="stylesheet" type="text/css" />
   <link href="src/styles/stylesheets/sass/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
+<!-- TEST FOR OTHER SASS-GENERATED CSS STYLESHEETS
+  <link href="src/styles/sass/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="src/styles/sass/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link href="src/styles/sass/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+-->
+
+
 <!-- PLUGINS AND DEPENDENCIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -36,6 +43,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="src/scripts/mixitup-master/src/mixitup.css" media="all" rel="stylesheet" type="text/css" />
 
+
+  <!-- OffCanvasMenu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="src/scripts/OffCanvasMenuEffects/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="src/scripts/OffCanvasMenuEffects/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="src/scripts/OffCanvasMenuEffects/css/menu_sideslide.css" />
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -72,7 +86,26 @@
     </div>
   </header>
 
-<div class="controls">
+  <button class="menu-button hidden-desktop" id="open-button">Menu</button>
+      <div class="content-wrap">
+        <div class="content">
+
+
+<div class="menu-wrap">
+        <nav class="menu">
+          <div class="icon-list">
+            <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Work</span></a>
+            <a href="#"><i class="fa fa-fw fa-star-o"></i><span>About</span></a>
+            <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Contact</span></a>
+            <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Blog</span></a>
+          </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+      </div>
+
+
+
+<div class="controls hidden-mobile">
 
   <label>Filter:</label>
   
@@ -88,14 +121,14 @@
   <button class="sort" data-sort="myorder:desc">Desc</button>
 </div>
 <div id="Container" class="container-mixed">
-  <div class="mix category-1" data-myorder="1"></div>
-  <div class="mix category-1" data-myorder="2"></div>
-  <div class="mix category-1" data-myorder="3"></div>
-  <div class="mix category-2" data-myorder="4"></div>
-  <div class="mix category-1" data-myorder="5"></div>
-  <div class="mix category-1" data-myorder="6"></div>
-  <div class="mix category-2" data-myorder="7"></div>
-  <div class="mix category-2" data-myorder="8"></div>
+  <div class="mix category-1" data-myorder="1"><img class="thumb-img" src="src/images/cycling-team.png" alt="columbia university"></div>
+  <div class="mix category-1" data-myorder="2"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div>
+  <div class="mix category-1" data-myorder="3"><img class="thumb-img" src="src/images/columbia.jpg" alt="columbia university"></div>
+  <div class="mix category-2" data-myorder="4"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div>
+  <div class="mix category-1" data-myorder="5"><img class="thumb-img" src="src/images/columbia.jpg" alt="columbia university"></div>
+  <div class="mix category-1" data-myorder="6"><img class="thumb-img" src="src/images/columbia.jpg" alt="columbia university"></div>
+  <div class="mix category-2" data-myorder="7"><img class="thumb-img" src="src/images/columbia.jpg" alt="columbia university"></div>
+  <div class="mix category-2" data-myorder="8"><img class="thumb-img" src="src/images/etsy-shop.png" alt="link to my etsy store"></div>
   
   <div class="gap"></div>
   <div class="gap"></div>
@@ -106,7 +139,7 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+    <!-- mixitup plugin-->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="main.js"></script>
@@ -114,7 +147,12 @@
       $(function(){
      $('#Container').mixItUp();
 });
-</script>
+    </script>
+    <!-- OFF CANVAS MENU SCRIPTS-->
+    <script src="src/scripts/OffCanvasMenuEffects/js/classie.js"></script>
+    <script src="src/scripts/OffCanvasMenuEffects/js/main.js"></script>
+
+
 
 </body>
 

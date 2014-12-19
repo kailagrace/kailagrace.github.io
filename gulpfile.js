@@ -89,10 +89,6 @@ gulp.task('size', function () {
         .pipe(gulp.dest('dist'));
 });
 
-//css sprites
-var sprite = require('css-sprite');
-sprite.create(options, cb);
-
 
 // include gulp
 var gulp = require('gulp'); 
