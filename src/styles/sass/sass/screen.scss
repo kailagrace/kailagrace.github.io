@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 
+
 /*INITIALIZE VARIABLES*/
 
 /*fonts & typography*/
@@ -12,7 +13,6 @@
 $Futura-font-stack: 'Futura PT', sans-serif;
 $Brandon-Grotesque-font-stack: 'Brandon Grotesque', sans-serif;
 $Open-Sans-font-stack: 'Open-Sans', sans-serif;
-$fig:
 $font-size-large:50px;
 $font-size-medium:30px;
 $font-size-small: 14px;
@@ -50,6 +50,23 @@ header {
 }
 
 
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+
 /*Page Elements by Class*/
 
 .mix img{width:$thumb-image;}
@@ -62,23 +79,23 @@ header {
 	font-size:$font-size-medium;
 }
 
-	#page-heading{
-		margin-top:5%;
-		letter-spacing:3em;
-		font-kerning: 1px;
-	}
+#page-heading{
+	margin-top:5%;
+}
 
 
 /*Images*/
+img{width:$thumb-image;}
+
 #logo-img{
-	width:$thumb-image;
+	width:150px;
 	padding:$standard-padding;
 }
 
 img .thumb-img{
-	width:$thumb-image;
-	max-width:100%;
-	min-width:20%}
+	width:$thumb-image;}
+
+#container img{width:$thumb-image;}	
 
 /*Typography*/
 .tk-futura-pt{

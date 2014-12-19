@@ -19,6 +19,9 @@ $font-size-medium:30px;
 $font-size-small: 14px;
 $font-size-tiny:10px;
 
+/*sizing*/
+$full-width:100%;
+
 /*colors*/
 $primary-color: hsla(176, 0%, 0%, 1);
 
@@ -51,6 +54,23 @@ header {
 }
 
 
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+
 /*Page Elements by Class*/
 
 .mix img{width:$thumb-image;}
@@ -63,23 +83,29 @@ header {
 	font-size:$font-size-medium;
 }
 
-	#page-heading{
-		margin-top:5%;
-		letter-spacing:3em;
-		font-kerning: 1px;
-	}
+#page-heading{
+	margin-top:5%;
+}
 
+ #page-navigation{
+  	position:relative;
+  	width:$full-width;
+  	left:70px;
+  	top:60px;
+  }
 
 /*Images*/
+img{width:$thumb-image;}
+
 #logo-img{
-	width:$thumb-image;
+	width:$tiny-image;
 	padding:$standard-padding;
 }
 
 img .thumb-img{
-	width:$thumb-image;
-	max-width:100%;
-	min-width:20%}
+	width:$thumb-image;}
+
+#container img{width:$thumb-image;}	
 
 /*Typography*/
 .tk-futura-pt{
@@ -88,6 +114,5 @@ img .thumb-img{
 	font-family:$Brandon-Grotesque-font-stack;}
 .gf-open-sans{
 	font-family:$Open-Sans-font-stack;}
-
 
 
