@@ -17,6 +17,7 @@ $Open-Sans-font-stack: 'Open-Sans', sans-serif;
 $font-size-large:50px;
 $font-size-medium:30px;
 $font-size-small: 14px;
+$font-size-xsmall: 12px;
 $font-size-tiny:10px;
 
 /*sizing*/
@@ -53,6 +54,10 @@ header {
 	padding:$more-padding;
 }
 
+button{
+	font-size:$font-size-small;
+	margin-left:-8px;
+}
 
 nav {
   ul {
@@ -75,6 +80,7 @@ nav {
 
 .mix img{width:$thumb-image;}
 
+.filter{font-size:$font-size-small;}
 
 /*Page Elements by ID*/
 
