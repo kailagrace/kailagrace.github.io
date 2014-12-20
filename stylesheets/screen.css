@@ -120,25 +120,30 @@ nav a {
   width: 90%;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
+.mix img:hover {
+  opacity: .5;
+}
+
+/* line 86, ../sass/screen.scss */
 .filter {
   font-size: 14px;
 }
 
 /*Page Elements by ID*/
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #header-container {
   position: absolute;
   font-size: 30px;
   margin-top: 3%;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #page-heading {
   margin-top: 5%;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #page-navigation {
   position: relative;
   width: 100%;
@@ -148,39 +153,39 @@ nav a {
 }
 
 /*Images*/
-/* line 108, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 img {
   width: 90%;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #logo-img {
   width: 15%;
   padding: 5px 5px 5px 5px;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 img .thumb-img {
   width: 90%;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #container img {
   width: 90%;
 }
 
 /*Typography*/
-/* line 121, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .tk-futura-pt {
   font-family: "Futura PT", sans-serif;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .tk-brandon-grotesque {
   font-family: "Brandon Grotesque", sans-serif;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .gf-open-sans {
   font-family: "Open-Sans", sans-serif;
 }

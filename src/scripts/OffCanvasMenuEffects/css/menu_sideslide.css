@@ -7,14 +7,12 @@ body,
 }
 
 html, 
-body{
+body,
+.container, 
+.content-wrap{
 	overflow:visible;
 }
 
-.container, 
-.content-wrap {
-	overflow: hidden;
-}
 
 .container {
 

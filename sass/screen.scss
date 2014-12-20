@@ -81,6 +81,7 @@ nav {
 /*Page Elements by Class*/
 
 .mix img{width:$thumb-image;}
+.mix img:hover{opacity:.5;}
 
 .filter{font-size:$font-size-small;}
 

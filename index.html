@@ -70,6 +70,13 @@
   <!-- import font awesome fonts-->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
 
+  <!--script controlling tabbed main navigation-->
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+
 </head>
 <body>
 
@@ -92,10 +99,10 @@
     
     <nav id="page-navigation">
       <ul>
-        <li><a>Work</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
-        <li><a>Blog</a></li>
+        <li><a href="#tabs-1">Work</a></li>
+        <li><a href="#tabs-2">About</a></li>
+        <li><a href="#tabs-3">Contact</a></li>
+        <li><a href="http://kailagmanca.wordpress.com">Blog<i class="fa fa-fw fa-arrow-circle-right"></i></a></li>
       </ul>
     </nav>
 
@@ -122,7 +129,8 @@
       </div>
 
 
-
+<!--MY WORK SHOWCASE PAGE-->
+<div id="tabs-1">
 <div class="controls hidden-mobile">
 
   <label>Filter:</label>
@@ -139,20 +147,31 @@
   <button class="sort" data-sort="myorder:desc">Desc</button>-->
 </div>
 <div id="Container" class="container-mixed">
-  <div class="mix category-3" data-myorder="1"><img class="thumb-img" src="src/images/uconn.png" alt="uconn communications department"></div>
-  <div class="mix category-1" data-myorder="1"><img class="thumb-img" src="src/images/cycling-team.png" alt="columbia university"></div>
-  <div class="mix category-2" data-myorder="2"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div>
-  <div class="mix category-2" data-myorder="3"><img class="thumb-img" src="src/images/tyler.png" alt="tyler technologies"></div>
-  <div class="mix category-3" data-myorder="4"><img class="thumb-img" src="src/images/columbia.png" alt="columbia university"></div>
-  <div class="mix category-4" data-myorder="5"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div>
-  <div class="mix category-4" data-myorder="6"><img class="thumb-img" src="src/images/california.png" alt="california cuisine website"></div>
-  <div class="mix category-1" data-myorder="7"><img class="thumb-img" src="src/images/portfolio.png" alt="my portfolio"></div>
-  <div class="mix category-3" data-myorder="8"><img class="thumb-img" src="src/images/heroes.png" alt="your everyday kid heroes"></div>
-  <div class="mix category-2" data-myorder="9"><img class="thumb-img" src="src/images/etsy-shop.png" alt="link to my etsy store"></div>
+  <div class="mix category-3 in-progress" data-myorder="1"><img class="thumb-img" src="src/images/uconn.png" alt="uconn communications department"></div>
+  <div class="mix category-3 in-progress" data-myorder="1"><img class="thumb-img" src="src/images/wedding.png" alt="our wedding website"></div>
+  <div class="mix category-3" data-myorder="1"><img class="thumb-img" src="src/images/uconn-video.png" alt="uconn.edu video testing site"></div>
+  <div class="mix category-1" data-myorder="2"><img class="thumb-img" src="src/images/cycling-team.png" alt="columbia university"></div>
+  <div class="mix category-2" data-myorder="3"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div>
+  <div class="mix category-2" data-myorder="4"><img class="thumb-img" src="src/images/tyler.png" alt="tyler technologies"></div>
+  <div class="mix category-3" data-myorder="5"><img class="thumb-img" src="src/images/columbia.png" alt="columbia university"></div>
+  <div class="mix category-4" data-myorder="6"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div>
+  <div class="mix category-4" data-myorder="7"><img class="thumb-img" src="src/images/california.png" alt="california cuisine website"></div>
+  <div class="mix category-1" data-myorder="8"><img class="thumb-img" src="src/images/portfolio.png" alt="my portfolio"></div>
+  <div class="mix category-3" data-myorder="9"><img class="thumb-img" src="src/images/heroes.png" alt="your everyday kid heroes"></div>
+  <div class="mix category-2" data-myorder="10"><img class="thumb-img" src="src/images/etsy-shop.png" alt="link to my etsy store"></div>
 
   
   <div class="gap"></div>
   <div class="gap"></div>
+</div>
+</div>
+
+<!--ABOUT ME PAGE-->
+<div id="tabs-2">
+</div>
+
+<!--CONTACT ME PAGE-->
+<div id="tabs-3">
 </div>
 
 
