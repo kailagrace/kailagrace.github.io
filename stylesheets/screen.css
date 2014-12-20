@@ -85,27 +85,28 @@ body {
 /* line 51, ../sass/screen.scss */
 header {
   height: 15%;
+  margin-top: 3%;
   min-height: 150px;
   padding: 10px 10px 10px 10px;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 button {
   font-size: 14px;
   margin-left: -8px;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 nav li {
   display: inline-block;
 }
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 nav a {
   display: block;
   padding: 6px 12px;
@@ -113,70 +114,72 @@ nav a {
 }
 
 /*Page Elements by Class*/
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .mix img {
   width: 90%;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .filter {
   font-size: 14px;
 }
 
 /*Page Elements by ID*/
-/* line 87, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #header-container {
   position: absolute;
   font-size: 30px;
+  margin-top: 3%;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #page-heading {
   margin-top: 5%;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #page-navigation {
   position: relative;
   width: 100%;
   left: 70px;
   top: 60px;
+  margin-top: 3%;
 }
 
 /*Images*/
-/* line 104, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 img {
   width: 90%;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 #logo-img {
   width: 15%;
   padding: 5px 5px 5px 5px;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 img .thumb-img {
   width: 90%;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #container img {
   width: 90%;
 }
 
 /*Typography*/
-/* line 117, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .tk-futura-pt {
   font-family: "Futura PT", sans-serif;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .tk-brandon-grotesque {
   font-family: "Brandon Grotesque", sans-serif;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .gf-open-sans {
   font-family: "Open-Sans", sans-serif;
 }

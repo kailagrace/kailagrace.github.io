@@ -50,6 +50,7 @@ body {
 
 header {
 	height:15%;
+	margin-top:3%;
 	min-height:150px;
 	padding:$more-padding;
 }
@@ -87,6 +88,7 @@ nav {
 #header-container{	
 	position:absolute;
 	font-size:$font-size-medium;
+	margin-top:3%;
 }
 
 #page-heading{
@@ -98,6 +100,7 @@ nav {
   	width:$full-width;
   	left:70px;
   	top:60px;
+  	margin-top:3%;
   }
 
 /*Images*/
