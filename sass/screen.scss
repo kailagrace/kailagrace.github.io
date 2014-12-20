@@ -28,25 +28,33 @@ $primary-color: hsla(176, 0%, 0%, 1);
 
 /*images*/
 $tiny-image:15%;
-$default-image: 200px;
+$default-image: 400px;
 $thumb-image: 90%;
 
 /*padding*/
+$most-padding:15px 15px 15px 15px;
 $more-padding:10px 10px 10px 10px;
 $standard-padding:5px 5px 5px 5px;
 $less-padding: 2px 2px 2px 2px;
 
+/*colors*/
+$link-color:#b6d4d0;
 
+.content { 
+	width:$full-width;
+}
+#tabs-2, #tabs-3 { display:none; }
 
 
 /*ASSIGN VARIABLES*/
 
 /*Main*/
 body {
-	overflow:visible;
+  overflow:visible;
   display:block;
   font: 100% $Brandon-Grotesque-font-stack;
   color: $primary-color;
+  letter-spacing: .01em;
 }
 
 header {
@@ -76,7 +84,29 @@ nav {
     text-decoration: none;
   }
 }
+p{
+	font-family:$Open-Sans-font-stack;
+	font-weight:300;
+	font-size:17px;
+	padding:$more-padding;
+}
 
+p:first-line{text-indent:20px;}
+
+p a{color:$link-color;}
+
+a:hover{opacity:.5;
+		position:relative;}
+
+a .hover-img:hover{
+content: url(src/image/billy_kaila.png);
+display:block;
+position:absolute;
+left:20px;
+top:50px;
+}
+
+.content p{padding:$most-padding;}
 
 /*Page Elements by Class*/
 
@@ -117,6 +147,12 @@ img .thumb-img{
 	width:$thumb-image;}
 
 #container img{width:$thumb-image;}	
+
+#kaila-image{
+	width:$default-image;
+	padding:$standard-padding;
+	float:left;
+}
 
 /*Typography*/
 .tk-futura-pt{

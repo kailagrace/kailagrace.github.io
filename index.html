@@ -22,6 +22,10 @@
   <link rel="stylesheet" href="src/styles/css/normalize.css">
   <link rel="stylesheet" href="src/styles/css/skeleton.css">
 
+  <!--jQuery Dependencies
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
 
   <!-- SCSS VIA COMPASS/SASS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,7 +46,8 @@
 
 <!-- PLUGINS AND DEPENDENCIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+ 
+  
   <!-- MIXITUP.JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="src/scripts/mixitup-master/src/mixitup.css" media="all" rel="stylesheet" type="text/css" />
@@ -98,10 +103,10 @@
     <div class="row u-full-width hidden-mobile">
     
     <nav id="page-navigation">
-      <ul>
-        <li><a href="#tabs-1">Work</a></li>
-        <li><a href="#tabs-2">About</a></li>
-        <li><a href="#tabs-3">Contact</a></li>
+      <ul class="tabs">
+        <li><a id="tab_1" href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_');" class="tab active">Work</a></li>
+        <li><a id ="tab_2" href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_');" class="tab">About</a></li>
+        <li><a id="tab_3" href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_');" class="tab">Contact</a></li>
         <li><a href="http://kailagmanca.wordpress.com">Blog<i class="fa fa-fw fa-arrow-circle-right"></i></a></li>
       </ul>
     </nav>
@@ -130,7 +135,7 @@
 
 
 <!--MY WORK SHOWCASE PAGE-->
-<div id="tabs-1">
+<div id="content_1" class="content">
 <div class="controls hidden-mobile">
 
   <label>Filter:</label>
@@ -147,18 +152,18 @@
   <button class="sort" data-sort="myorder:desc">Desc</button>-->
 </div>
 <div id="Container" class="container-mixed">
-  <div class="mix category-3 in-progress" data-myorder="1"><img class="thumb-img" src="src/images/uconn.png" alt="uconn communications department"></div>
-  <div class="mix category-3 in-progress" data-myorder="1"><img class="thumb-img" src="src/images/wedding.png" alt="our wedding website"></div>
-  <div class="mix category-3" data-myorder="1"><img class="thumb-img" src="src/images/uconn-video.png" alt="uconn.edu video testing site"></div>
-  <div class="mix category-1" data-myorder="2"><img class="thumb-img" src="src/images/cycling-team.png" alt="columbia university"></div>
-  <div class="mix category-2" data-myorder="3"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div>
-  <div class="mix category-2" data-myorder="4"><img class="thumb-img" src="src/images/tyler.png" alt="tyler technologies"></div>
-  <div class="mix category-3" data-myorder="5"><img class="thumb-img" src="src/images/columbia.png" alt="columbia university"></div>
-  <div class="mix category-4" data-myorder="6"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div>
-  <div class="mix category-4" data-myorder="7"><img class="thumb-img" src="src/images/california.png" alt="california cuisine website"></div>
-  <div class="mix category-1" data-myorder="8"><img class="thumb-img" src="src/images/portfolio.png" alt="my portfolio"></div>
-  <div class="mix category-3" data-myorder="9"><img class="thumb-img" src="src/images/heroes.png" alt="your everyday kid heroes"></div>
-  <div class="mix category-2" data-myorder="10"><img class="thumb-img" src="src/images/etsy-shop.png" alt="link to my etsy store"></div>
+  <div class="mix all category-3 in-progress" data-myorder="1"><img class="thumb-img" src="src/images/uconn.png" alt="uconn communications department"></div>
+  <div class="mix all category-1 category-2 in-progress" data-myorder="2"><img class="thumb-img" src="src/images/wedding.png" alt="our wedding website"></div>
+  <div class="mix all category-1 category-2 " data-myorder="3"><img class="thumb-img" src="src/images/uconn-video.png" alt="uconn.edu video testing site"></div>
+  <div class="mix all category-1 category-2 category-3" data-myorder="4"><img class="thumb-img" src="src/images/cycling-team.png" alt="uconn cycling team website"></div>
+  <div class="mix all category-1 category-2" data-myorder="5"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div>
+  <div class="mix all category-3 category-2 " data-myorder="6"><img class="thumb-img" src="src/images/tyler.png" alt="tyler technologies"></div>
+  <div class="mix all category-1 category-3" data-myorder="7"><img class="thumb-img" src="src/images/columbia.png" alt="columbia university"></div>
+  <div class="mix all category-1 category-2 category-3" data-myorder="8"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div>
+  <div class="mix all category-1 category-2 category-3" data-myorder="9"><img class="thumb-img" src="src/images/california.png" alt="california cuisine website"></div>
+  <div class="mix all category-1 category-2 category-3" data-myorder="10"><img class="thumb-img" src="src/images/portfolio.png" alt="my portfolio"></div>
+  <div class="mix all category-1 category-2 category-3 category-4" data-myorder="11"><img class="thumb-img" src="src/images/heroes.png" alt="your everyday kid heroes"></div>
+  <div class="mix all category-1 category-4" data-myorder="12"><img class="thumb-img" src="src/images/etsy.png" alt="link to my etsy store"></div>
 
   
   <div class="gap"></div>
@@ -167,11 +172,113 @@
 </div>
 
 <!--ABOUT ME PAGE-->
-<div id="tabs-2">
+<div id="content_2" class="content">
+  <img alt="image of kaila manca" id="kaila-image" src="src/images/me.png">
+  <p>Hi there, I’m Kaila. I am a User Interaction Designer, and I make my products functional, memorable, usable, & beautiful. I’m a left coaster, currently living life in the East with <a class="about-page-link hover-img" target="_blank" href="src/images/billy_kaila.png">my fantastic fiance, Billy</a>, and <a class="about-page-link" href="">our mountain bikes, Lil’ Oatie and Chase</a>. I am passionate about learning, I love adventure, & I can’t turn down a challenge. When I'm not coding or creating my own digital designs, I can often be found doing one of the three R's: reading, running, or riding my bicycle. I enjoy cheesy puns, cooking 'experiment-style', NPR, pine forests, coffee dates, and dreaming of one day being a dog-owner. 
+   I graduated from the University of Connecticut in 2015, with a BS in Human-Computer Interaction, a major I created. In the past, I’ve worked at Columbia University, the University of Connecticut, and Tyler Technologies. Check out my <a class="about-page-link" target="_blank" href="http://kailagmanca.wordpress.com">blog</a>. I love meeting new people, so feel free to reach out to me and <a class="about-page-link" href="contactme.html">say hello.</a></p>
 </div>
 
 <!--CONTACT ME PAGE-->
-<div id="tabs-3">
+<div id="content_3" class="content">
+
+  <form name="contactform" method="post" action="send_form_email.php">
+   
+  <table width="450px">
+   
+  <tr>
+   
+   <td valign="top">
+   
+    <label for="first_name">First Name *</label>
+   
+   </td>
+   
+   <td valign="top">
+   
+    <input  type="text" name="first_name" maxlength="50" size="30">
+   
+   </td>
+   
+  </tr>
+   
+  <tr>
+   
+   <td valign="top">
+   
+    <label for="last_name">Last Name *</label>
+   
+   </td>
+   
+   <td valign="top">
+   
+    <input  type="text" name="last_name" maxlength="50" size="30">
+   
+   </td>
+   
+  </tr>
+   
+  <tr>
+   
+   <td valign="top">
+   
+    <label for="email">Email Address *</label>
+   
+   </td>
+   
+   <td valign="top">
+   
+    <input  type="text" name="email" maxlength="80" size="30">
+   
+   </td>
+   
+  </tr>
+   
+  <tr>
+   
+   <td valign="top">
+   
+    <label for="telephone">Telephone Number</label>
+   
+   </td>
+   
+   <td valign="top">
+   
+    <input  type="text" name="telephone" maxlength="30" size="30">
+   
+   </td>
+   
+  </tr>
+   
+  <tr>
+   
+   <td valign="top">
+   
+    <label for="comments">Message *</label>
+   
+   </td>
+   
+   <td valign="top">
+   
+    <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+   
+   </td>
+   
+  </tr>
+   
+  <tr>
+   
+   <td colspan="2" style="text-align:center">
+   
+  <input type="submit" class="button" value="Submit">
+   </td>
+   
+  </tr>
+   
+  </table>
+   
+  </form>
+
+
 </div>
 
 
@@ -179,7 +286,22 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- mixitup plugin-->
+
+    <!--tabs script-->
+<script>
+ function tabSwitch_2(active, number, tab_prefix, content_prefix) {
+     
+    for (var i=1; i < number+1; i++) {
+      document.getElementById(content_prefix+i).style.display = 'none';
+      document.getElementById(tab_prefix+i).className = '';
+    }
+    document.getElementById(content_prefix+active).style.display = 'block';
+    document.getElementById(tab_prefix+active).className = 'active';    
+     
+}
+</script>
+
+   <!-- mixitup plugin-->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="main.js"></script>
@@ -188,6 +310,8 @@
      $('#Container').mixItUp();
 });
     </script>
+    <!--jQuery UI Widgets -->
+     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <!-- OFF CANVAS MENU SCRIPTS-->
     <script src="src/scripts/OffCanvasMenuEffects/js/classie.js"></script>
     <script src="src/scripts/OffCanvasMenuEffects/js/main.js"></script>

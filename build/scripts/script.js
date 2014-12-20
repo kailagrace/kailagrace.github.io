@@ -1,0 +1,1 @@
+$(document).ready(function(){$("a.tab").click(function(){$(".active").removeClass("active"),$(this).addClass("active"),$(".content").slideUp();var t=$(this).attr("title");$("#"+t).slideDown()})});
