@@ -21,13 +21,13 @@ body {
 	}
 
 a {
-	color: #4e4a46;
+	color: black;
 	text-decoration: none;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: #c94e50;
+	color: #cfcfcf;
 	outline: none;
 }
 

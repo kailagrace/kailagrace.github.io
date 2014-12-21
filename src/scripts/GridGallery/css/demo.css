@@ -19,16 +19,6 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:after { clear: both; }
 
 
-a {
-	color: #f0f0f0;
-	text-decoration: none;
-	outline: none;
-}
-
-a:hover {
-	color: #000;
-}
-
 
 
 .bp-icon:after {

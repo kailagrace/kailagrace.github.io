@@ -41,10 +41,15 @@ table {
 }
 
 /* line 28, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
+caption, th {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
+}
+
+td{
+  text-align: left;
+  font-weight: normal;
 }
 
 /* line 30, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
