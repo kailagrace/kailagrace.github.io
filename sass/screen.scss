@@ -42,8 +42,25 @@ $link-color:#b6d4d0;
 
 .content { 
 	width:$full-width;
+	margin-top:25px;
 }
-#tabs-2, #tabs-3 { display:none; }
+
+#content_1{}
+
+#content_1:active{
+	#content_2, #content_3 { display:none; }
+}
+
+#content_2:active{
+	#content_1, #content_3 { display:none; }
+}
+
+#content_3:active{
+	#content_2, #content_1 { display:none; }
+}
+
+.no-scroll{overflow-y:hidden;}
+
 
 
 /*ASSIGN VARIABLES*/
@@ -60,7 +77,7 @@ body {
 header {
 	height:15%;
 	margin-top:3%;
-	min-height:150px;
+	min-height:120px;
 	padding:$more-padding;
 }
 
@@ -110,12 +127,28 @@ top:50px;
 
 /*Page Elements by Class*/
 
+.hidden-nav{display:none;}
+
+
 .mix img{width:$thumb-image;}
 .mix img:hover{opacity:.5;}
 
 .filter{font-size:$font-size-small;}
 
 /*Page Elements by ID*/
+
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+
+ }
+
 
 #header-container{	
 	position:absolute;
@@ -163,3 +196,66 @@ img .thumb-img{
 	font-family:$Open-Sans-font-stack;}
 
 
+/* Animation classes for the slider menu plugin*/
+
+.dl-menu.dl-animate-out-1 {
+    animation: MenuAnimOut1 0.4s linear forwards;
+}
+ 
+@keyframes MenuAnimOut1 {
+    50% {
+        transform: translateZ(-250px) rotateY(30deg);
+    }
+    75% {
+        transform: translateZ(-372.5px) rotateY(15deg);
+        opacity: .5;
+    }
+    100% {
+        transform: translateZ(-500px) rotateY(0deg);
+        opacity: 0;
+    }
+}
+ 
+.dl-menu.dl-animate-in-1 {
+    animation: MenuAnimIn1 0.3s linear forwards;
+}
+ 
+@keyframes MenuAnimIn1 {
+    0% {
+        transform: translateZ(-500px) rotateY(0deg);
+        opacity: 0;
+    }
+    20% {
+        transform: translateZ(-250px) rotateY(30deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateZ(0px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+ #page-navigation{display:none;}
+ #header-container{margin-left:100px;}
+.controls{margin-top:-40px;
+font-size:12px;
+font-stretch:condensed;
+#header-container{margin-top:4%;
+	width:200%;
+}
+#header-container h1{font-size:50px;}
+#logo-img{width:25%;}
+}
+
+}
+
+
+
+@media screen and (max-width:650px) {
+.swap{display:none;}
+.hidden-nav{display:-webkit-box;}
+.controls{display:-webkit-box;}
+
+
+}

@@ -413,7 +413,7 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) { 
   .hidden-mobile{display: none;}
-  .hidden-desktop{display: block;}
+  .hidden-desktop{display: block;
 }
 
 /* Larger than phablet (also point when grid becomes active) */

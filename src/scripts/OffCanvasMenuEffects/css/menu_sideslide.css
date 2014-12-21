@@ -28,9 +28,7 @@ body,
 }
 
 .content-wrap {
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-}
+
 
 .content {
 	position: relative;

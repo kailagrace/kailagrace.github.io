@@ -12,6 +12,7 @@ body, button{
 .controls{
   padding: 2%;
   color: black;
+  margin-top:-20px;
 }
 
 label{
@@ -43,7 +44,7 @@ button:focus{
   padding: 2% 2% 0;
   text-align: justify;
   font-size: 0.1px;
-  
+  margin-top:-25px;
   -webkit-backface-visibility: hidden;
 }
 
