@@ -72,7 +72,6 @@
   <script>try{Typekit.load();}catch(e){}</script>
 
 
-
   <!-- import font awesome fonts-->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
 
@@ -134,13 +133,13 @@
             <button class="dl-trigger">Open Menu</button>
             <ul class="dl-menu">
               <li>
-                <a href="#home">Work</a>
+                <a href="#">Work</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#">About</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#">Contact</a>
               </li>
               <li>
                 <a href="#">Blog</a>
@@ -225,83 +224,9 @@
 
 <!--ABOUT ME PAGE-->
 <div id="content_2" class="content">
-
-
-
-  <img alt="image of kaila manca" id="kaila-image" src="src/images/me2.png">
-
-
-
-  <div id="my-knowledge" class="about-column">
-    <h3>What I Know</h3>
-    <ul>
-      <li>HTML5</li>
-        <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>JQuery</li>
-          <li>PHP/MySQL</li>
-          <li>Wordpress Development</li>
-          <li>Frameworks </br><span class="small"> Bootstrap, Foundation, Skeleton, HTML5 Boilerplate, Pure CSS</span>
-          <li>Responsive Design</li>
-          <li>Agile + Lean UX Approaches</li>
-          <li>Rapid Prototyping</li>
-          <li>Information Architecture</li>
-          <li>Grid systems, Color theory, Visual hierarchy, and UI Patterns</li>
-          <li>Mockup Software </br><span class="small">Balsamiq Mockups, Axure</span></li>
-          <li>Adobe Creative Suite </br><span class="small">Illustrator, Photoshop, Fireworks, InDesign, Dreamweaver</span></li>
-        </ul>
-   </div>
-
-   <div id="favorite-tools" class="about-column">
-    <h3>My Current Obsessions</h3>
-    <ul><li>Compass</li>
-      <li>Gulp</li>
-      <li>Node.js</li>
-      <li>JSHint</li>
-    </ul>
-   </div>
-
-
-
-
-
-
-  <div id="graph" >
-    <img class="graph" src="src/images/graph-fields.png" alt="graph of web design, web development, and user experience fields">
-   </div>
-
-
-
-
-
-  <p>Hi there, I’m Kaila. I am a User Interface Designer, and I make my products functional, memorable, usable, & beautiful. I love to learn, design, and code. I’m a left coaster, currently living life in the East with <a class="about-page-link hover-img" target="_blank" href="src/images/billy_kaila.png">my fantastic fiance, Billy</a>, and <a class="about-page-link" href="">our mountain bikes, Lil’ Oatie and Chase</a>. I am passionate about learning, I love adventure, & I can’t turn down a challenge. When I'm not coding or creating my own digital designs, I can often be found doing one of the three R's: reading, running, or riding my bicycle. I enjoy cheesy puns, cooking 'experiment-style', NPR, pine forests, coffee dates, and dreaming of one day being a dog-owner. 
+  <img alt="image of kaila manca" id="kaila-image" src="src/images/me.png">
+  <p>Hi there, I’m Kaila. I am a User Interaction Designer, and I make my products functional, memorable, usable, & beautiful. I’m a left coaster, currently living life in the East with <a class="about-page-link hover-img" target="_blank" href="src/images/billy_kaila.png">my fantastic fiance, Billy</a>, and <a class="about-page-link" href="">our mountain bikes, Lil’ Oatie and Chase</a>. I am passionate about learning, I love adventure, & I can’t turn down a challenge. When I'm not coding or creating my own digital designs, I can often be found doing one of the three R's: reading, running, or riding my bicycle. I enjoy cheesy puns, cooking 'experiment-style', NPR, pine forests, coffee dates, and dreaming of one day being a dog-owner. 
    I graduated from the University of Connecticut in 2015, with a BS in Human-Computer Interaction, a major I created. In the past, I’ve worked at Columbia University, the University of Connecticut, and Tyler Technologies. Check out my <a class="about-page-link" target="_blank" href="http://kailagmanca.wordpress.com">blog</a>. I love meeting new people, so feel free to reach out to me and <a class="about-page-link" href="">say hello.</a></p>
-
-
-
-     
-<div class="line"></div>
-
-  
- <div id="job-history" class="about-column">
-    <h3>My Recent Job History</h3>
-    <UL><LI>2013 <span class="small">Columbia University Lab Research Assistant and Website Developer</span></LI>
-    <LI>2012-2014 <span class="small">University of Connecticut Outdoors Recreation Media Manager</span></li>
-    <li>2014 <span class="small">Tyler Technologies User Experience Intern (Software)</span></li>
-    <li>2014-2015 <span class="small">University of Connecticut Communications Student Developer (Web)</span></li>
-  </ul>
-   </div>
-
-  <div id="class-history" class="about-column">
-   <h3>Relevant coursework</h3>
-   <h5><div class="red">Computer Science &amp; Engineering:</div><span class="small"> Matlab; Java; Python; Object-Oriented Programming; Digital Logic Design; Neuroscience of Hearing &amp; MATLAB</span> 
-    <div class="orange">Digital Media:</div><span class="small"> Web Development I, II, III; Web Typography; Student Agency (Semester-long Design Project for a Company)</span>
-    <div class="blue">Other:</div><span class="small"> Human Factors Design; Mass Media Communication; Graduate Seminar in Communication and Technology; Senior Thesis in Human Computer Interaction</span></h5>
-   </div>
-   
- 
-
-
 </div>
 
 <!--CONTACT ME PAGE-->
@@ -426,13 +351,6 @@
     <!-- OFF CANVAS MENU SCRIPTS-->
     <script src="src/scripts/OffCanvasMenuEffects/js/classie.js"></script>
     <script src="src/scripts/OffCanvasMenuEffects/js/main.js"></script>
-
-      <script> 
-  $(window).load(function() {  
-  document.getElementById("content_1").style.display = "block"; 
-  document.getElementById("content_2").style.display = "none"; 
-  document.getElementById("content_3").style.display = "none"; 
-  });</script>
 
     <!--tabs script-->
 <script>

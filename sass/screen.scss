@@ -25,6 +25,13 @@ $full-width:100%;
 
 /*colors*/
 $primary-color: hsla(176, 0%, 0%, 1);
+$blue:#3299BB;
+$orange:#FF9900;
+
+$dark-gray:#424242;
+$light-gray:#e9e9e9;
+$mid-gray:#bcbcbc;
+$gray:#b4b4b4;
 
 /*images*/
 $tiny-image:15%;
@@ -36,6 +43,7 @@ $most-padding:15px 15px 15px 15px;
 $more-padding:10px 10px 10px 10px;
 $standard-padding:5px 5px 5px 5px;
 $less-padding: 2px 2px 2px 2px;
+$twenty-five: 25px 25px 25px 25px;
 
 /*colors*/
 $link-color:#b6d4d0;
@@ -45,18 +53,18 @@ $link-color:#b6d4d0;
 	margin-top:25px;
 }
 
-#content_1{}
 
-#content_1:active{
-	#content_2, #content_3 { display:none; }
+
+#home:active{
+	#about, #contact { display:none; }
 }
 
-#content_2:active{
-	#content_1, #content_3 { display:none; }
+#about:active{
+	#home, #contact { display:none; }
 }
 
-#content_3:active{
-	#content_2, #content_1 { display:none; }
+#contact:active{
+	#about, #home { display:none; }
 }
 
 .no-scroll{overflow-y:hidden;}
@@ -69,9 +77,10 @@ $link-color:#b6d4d0;
 body {
   overflow:visible;
   display:block;
-  font: 100% $Brandon-Grotesque-font-stack;
-  color: $primary-color;
+  font:$Futura-font-stack;
+  color: $dark-gray;
   letter-spacing: .01em;
+    font-family:$Brandon-Grotesque-font-stack;
 }
 
 header {
@@ -110,7 +119,7 @@ p{
 
 p:first-line{text-indent:20px;}
 
-p a{color:$link-color;}
+p a{color:$blue;}
 
 a:hover{opacity:.5;
 		position:relative;}
@@ -123,9 +132,47 @@ left:20px;
 top:50px;
 }
 
-.content p{padding:$most-padding;}
+.content p{padding: 15px 5px 15px 5px;
+width:40%;
+font-family:$Futura-font-stack;
+font-size:20px;}
 
 /*Page Elements by Class*/
+
+.small{
+	font-size:15px;
+	color:$dark-gray;
+}
+
+.graph{width:100%;}
+.about-column{max-width:60%;
+width:50%;
+float:right;
+font-family:$Futura-font-stack;
+padding-bottom:15px;
+font-size:20px;
+
+}
+
+.about-column h3{
+
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight:200;
+	letter-spacing:.08em;
+	padding-bottom:10px;
+	text-transform:uppercase;
+font-size:18px;
+color:$orange;}
+
+.about-column h5 div{padding-bottom:2px;
+padding-top:4px;}
+
+#my-knowledge, #favorite-tools{width:55%;}
+#my-knowledge ul, #favorite-tools ul{list-style-type:circle;}
+#my-knowledge h3, #favorite-tools h3{	margin-left:-20px;}
+
+#job-history, #class-history{width:50%;
+float:left;}
 
 .hidden-nav{display:none;}
 
@@ -182,10 +229,16 @@ img .thumb-img{
 #container img{width:$thumb-image;}	
 
 #kaila-image{
-	width:$default-image;
+	width:$full-width;
 	padding:$standard-padding;
 	float:left;
+	padding-right:25px;
+	padding-bottom:15px;
 }
+
+#graph{float:right;
+width:$full-width;}
+
 
 /*Typography*/
 .tk-futura-pt{
@@ -241,12 +294,15 @@ img .thumb-img{
 .controls{margin-top:-40px;
 font-size:12px;
 font-stretch:condensed;
-#header-container{margin-top:4%;
+#header-container{margin-top:120px;
 	width:200%;
 }
 #header-container h1{font-size:50px;}
-#logo-img{width:25%;}
+img#logo-img, #logo-img{
+width:25%;
+min-width:90px;}
 }
+#page-heading{font-size:50px;}
 
 }
 
@@ -259,3 +315,5 @@ font-stretch:condensed;
 
 
 }
+
+div.content.hide { display: none; }
