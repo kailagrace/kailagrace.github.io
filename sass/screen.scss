@@ -272,6 +272,17 @@ img .thumb-img{
 
 }
 
+#popup{width:300px;
+height:auto;
+background-color:#c4c4c4;
+opacity:.8;
+border:solid black;
+padding:5px 5px 5px 5px;
+position:relative;
+top:410px;
+left:300px;
+display:none;}
+
 #graph{float:right;
 width:$full-width;}
 
