@@ -150,7 +150,5 @@ Woohoo! Your message went through. Thanks for reaching out to me, I'll do my bes
  
  
 <?php
- 
 }
- 
 ?>
