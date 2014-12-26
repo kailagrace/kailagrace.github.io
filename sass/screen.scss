@@ -14,6 +14,7 @@
 $Futura-font-stack: 'Futura PT', sans-serif;
 $Brandon-Grotesque-font-stack: 'Brandon Grotesque', sans-serif;
 $Open-Sans-font-stack: 'Open-Sans', sans-serif;
+$Karma-font-stack: 'Karma' serif;
 $font-size-large:50px;
 $font-size-medium:30px;
 $font-size-small: 14px;
@@ -75,12 +76,11 @@ $link-color:#b6d4d0;
 
 /*Main*/
 body {
+font-family:$Karma-font-stack;
   overflow:visible;
   display:block;
-  font:$Futura-font-stack;
   color: $dark-gray;
-  letter-spacing: .01em;
-    font-family:$Brandon-Grotesque-font-stack;
+  letter-spacing: .1px;
 }
 
 header {
@@ -90,6 +90,18 @@ header {
 	padding:$more-padding;
 }
 
+h1{	letter-spacing:.5px;}
+
+.pages h1{letter-spacing:1px;
+font-size:20px;
+text-transform:uppercase;
+font-family:$Futura-font-stack;}
+
+.pages{font-family:$Karma-font-stack;}
+
+.content{font-family:'Karma' serif;}
+
+#content_1, #content_2, #content_3 {font-family:'Karma' serif;}
 button{
 	font-size:$font-size-small;
 	margin-left:-8px;
@@ -132,12 +144,16 @@ left:20px;
 top:50px;
 }
 
-.content p{padding: 15px 5px 15px 5px;
-width:40%;
-font-family:$Futura-font-stack;
-font-size:20px;}
+footer{width:100%;
+float:left;
+}
+
 
 /*Page Elements by Class*/
+
+.content p{padding: 15px 5px 15px 5px;
+width:40%;
+font-size:20px;}
 
 .small{
 	font-size:15px;
@@ -148,14 +164,14 @@ font-size:20px;}
 .about-column{max-width:60%;
 width:50%;
 float:right;
-font-family:$Futura-font-stack;
 padding-bottom:15px;
 font-size:20px;
-
+font-family:$Karma-font-stack;
 }
 
-.about-column h3{
+.container-mixed{font-size:20px;}
 
+.about-column h3{
 	font-family: 'Helvetica Neue', sans-serif;
 	font-weight:200;
 	letter-spacing:.08em;
@@ -181,6 +197,19 @@ float:left;}
 .mix img:hover{opacity:.5;}
 
 .filter{font-size:$font-size-small;}
+
+.work-page:before{padding:0;}
+.container-mixed .work-page{font-size:20px;}
+.container-mixed .mix:before .work-page{padding:0;}
+.Container .work-page{width:15%;}
+.Container .work-page div{float:left;}
+
+.line{height:10px;
+width:100%;
+background-color:black;
+margin-top:20px;
+margin-bottom:20px;
+float:left;}
 
 /*Page Elements by ID*/
 
@@ -210,9 +239,10 @@ float:left;}
  #page-navigation{
   	position:relative;
   	width:$full-width;
-  	left:70px;
+  	left:83px;
   	top:60px;
   	margin-top:3%;
+  	font-family: 'Karma' serif;
   }
 
 /*Images*/
@@ -221,6 +251,11 @@ img{width:$thumb-image;}
 #logo-img{
 	width:$tiny-image;
 	padding:$standard-padding;
+	margin-right:10px;
+}
+
+#logo-img:hover{
+opacity:.5;
 }
 
 img .thumb-img{
@@ -234,11 +269,28 @@ img .thumb-img{
 	float:left;
 	padding-right:25px;
 	padding-bottom:15px;
+
 }
 
 #graph{float:right;
 width:$full-width;}
 
+#social-media{width:26%;
+margin-left:37%;
+display:flex;
+flex-direction:row;
+align-content:center;
+margin-right:37%;
+float:left;
+padding-bottom:20px;}
+
+#about-header{position:absolute;}
+#about-header h1{position:relative;
+top:405px;
+z-index:5;
+font-size:160px;
+color:white;
+left:10px;}
 
 /*Typography*/
 .tk-futura-pt{

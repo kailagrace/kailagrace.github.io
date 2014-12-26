@@ -1,5 +1,5 @@
 
-/* FUNCTION TO CONTROL TABS ON MAIN PORTFOLIO SITE*/
+/* FUNCTION TO CONTROL TABS ON MAIN PORTFOLIO 
 
   var tabLinks = new Array();
   var contentDivs = new Array();
