@@ -37,6 +37,7 @@ $gray:#b4b4b4;
 /*images*/
 $tiny-image:15%;
 $default-image: 400px;
+$icon-image: 50px;
 $thumb-image: 90%;
 
 /*padding*/
@@ -95,6 +96,7 @@ h1{	letter-spacing:.5px;}
 .pages h1{letter-spacing:1px;
 font-size:20px;
 text-transform:uppercase;
+padding:$more-padding;
 font-family:$Futura-font-stack;}
 
 .pages{font-family:$Karma-font-stack;}
@@ -137,9 +139,7 @@ a:hover{opacity:.5;
 		position:relative;}
 
 a .hover-img:hover{
-content: url(src/image/billy_kaila.png);
-display:block;
-position:absolute;
+
 left:20px;
 top:50px;
 }
@@ -258,10 +258,21 @@ img{width:$thumb-image;}
 opacity:.5;
 }
 
-img .thumb-img{
-	width:$thumb-image;}
+.work-page .thumb-img img{
+	width:$icon-image;}
 
-#container img{width:$thumb-image;}	
+.work-page i .float{float:left;}
+.work-page a i{float:left;}
+.work-page div	.thumb-img{width:50px;
+float:left;}
+.work-nav{display:inline-flex;
+padding-bottom:15px;
+justify-content:space-between;}
+.work-nav a{float:left;
+}
+
+.work-nav h1{padding:$more-padding;}
+#container img{width:$icon-image;}	
 
 #kaila-image{
 	width:$full-width;
@@ -271,6 +282,10 @@ img .thumb-img{
 	padding-bottom:15px;
 
 }
+
+.fa-angle-left{margin-right:40px;}
+.fa-angle-right{margin-left:-10px;
+padding-right:10px;}
 
 #popup{width:300px;
 height:auto;

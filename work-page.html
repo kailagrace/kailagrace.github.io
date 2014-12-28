@@ -163,9 +163,22 @@
 <div id="content_1" class="content">
 
 <h1>University of Connecticut Communications</h1>
-
-<a href=""><i class="fa fa-fw fa-angle-left fa-2x"></i></a>
-<a href=""><i class="fa fa-fw fa-angle-right fa-2x"></i></a>
+<div class="work-nav row u-full-width">
+<a href=""><i class="float fa fa-fw fa-angle-left fa-2x"></i></a>
+    <div class="thumb-img"><img class="thumb-img" src="src/images/uconn.png" alt="uconn communications department"></div>
+    <div class="thumb-img" data-myorder="2"><img class="thumb-img" src="src/images/wedding.png" alt="our wedding website"></div>
+    <div class="thumb-img" data-myorder="3"><img class="thumb-img" src="src/images/other.png" alt="other projects"></div>
+    <div class="thumb-img" data-myorder="4"><img class="thumb-img" src="src/images/cycling-team.png" alt="uconn cycling team website"></div>
+    <div class="thumb-img"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div>
+    <div class="thumb-img" data-myorder="6"><img class="thumb-img" src="src/images/tyler.png" alt="tyler technologies"></div>
+    <div class="thumb-img"><img class="thumb-img" src="src/images/columbia.png" alt="columbia university"></div>
+    <div class="thumb-img"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div>
+    <div class="thumb-img"><img class="thumb-img" src="src/images/california.png" alt="california cuisine website"></div>
+    <div class="thumb-img" data-myorder="10"><img class="thumb-img" src="src/images/portfolio.png" alt="my portfolio"></div>
+    <div class="thumb-img" data-myorder="11"><img class="thumb-img" src="src/images/heroes.png" alt="your everyday kid heroes"></div>
+    <a href="https://www.etsy.com/your/shops/KailaGraceDesigns/"><div class="thumb-img" data-myorder="12"><img class="thumb-img" src="src/images/etsy.png" alt="link to my etsy store"></div></a>
+<a href=""><i class="float fa fa-fw fa-angle-right fa-2x"></i></a>
+</div>
 
 <ul>Projects</ul>
 <li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
@@ -200,9 +213,8 @@
 
       <script> 
   $(window).load(function() {  
-  document.getElementById("content_1").style.display = "block"; 
-  document.getElementById("content_2").style.display = "none"; 
-  document.getElementById("content_3").style.display = "none"; 
+  document.getElementByClassName("thumb_img").style.opacity = .8;
+  
   });</script>
 
     <!--tabs script-->
