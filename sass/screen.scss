@@ -109,6 +109,11 @@ button{
 	margin-left:-8px;
 }
 
+ul{
+    li{list-style-type:none;}
+}
+
+
 nav {
   ul {
     margin: 0;
@@ -365,6 +370,18 @@ left:10px;}
         opacity: 1;
     }
 }
+
+/* =====WORK PAGE SPECIFIC STYLES ===========*/
+
+
+.work-page{margin-top:20px;}
+
+
+
+
+
+
+/* =====MEDIA QUERIES ===========*/
 
 @media screen and (max-width:600px) {
  #page-navigation{display:none;}

@@ -83,6 +83,9 @@
     <script src="src/scripts/ResponsiveMultiLevelMenu/js/modernizr.custom.js"></script>
 
 
+
+
+
 </head>
 <body>
 
@@ -158,29 +161,42 @@
 
 
 
-<div class="pages">
+<div class="pages work-page">
 <!--MY WORK SHOWCASE PAGE-->
-<div id="content_1" class="content">
+<div id="work-page-nav">
 
 <h1>University of Connecticut Communications</h1>
-<div class="work-nav row u-full-width">
+<ul><div class="work-nav row u-full-width">
 <a href=""><i class="float fa fa-fw fa-angle-left fa-2x"></i></a>
-    <div class="thumb-img"><img class="thumb-img" src="src/images/uconn.png" alt="uconn communications department"></div>
-    <div class="thumb-img" data-myorder="2"><img class="thumb-img" src="src/images/wedding.png" alt="our wedding website"></div>
-    <div class="thumb-img" data-myorder="3"><img class="thumb-img" src="src/images/other.png" alt="other projects"></div>
-    <div class="thumb-img" data-myorder="4"><img class="thumb-img" src="src/images/cycling-team.png" alt="uconn cycling team website"></div>
-    <div class="thumb-img"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div>
-    <div class="thumb-img" data-myorder="6"><img class="thumb-img" src="src/images/tyler.png" alt="tyler technologies"></div>
-    <div class="thumb-img"><img class="thumb-img" src="src/images/columbia.png" alt="columbia university"></div>
-    <div class="thumb-img"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div>
-    <div class="thumb-img"><img class="thumb-img" src="src/images/california.png" alt="california cuisine website"></div>
-    <div class="thumb-img" data-myorder="10"><img class="thumb-img" src="src/images/portfolio.png" alt="my portfolio"></div>
-    <div class="thumb-img" data-myorder="11"><img class="thumb-img" src="src/images/heroes.png" alt="your everyday kid heroes"></div>
-    <a href="https://www.etsy.com/your/shops/KailaGraceDesigns/"><div class="thumb-img" data-myorder="12"><img class="thumb-img" src="src/images/etsy.png" alt="link to my etsy store"></div></a>
+    <li class="tab active"><a id="tab_1" href="javascript:tabSwitch_2(1, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img"><img class="thumb-img" src="src/images/uconn.png" alt="uconn communications department"></div></a></li>
+     <li class="tab"><a id="tab_2" href="javascript:tabSwitch_2(2, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img" data-myorder="2"><img class="thumb-img" src="src/images/wedding.png" alt="our wedding website"></div></a></li>
+     <li class="tab"><a id="tab_3" href="javascript:tabSwitch_2(3, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img" data-myorder="3"><img class="thumb-img" src="src/images/OTHER.PNG" alt="other projects"></div></a></li>
+     <li class="tab"><a id="tab_4" href="javascript:tabSwitch_2(4, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img" data-myorder="4"><img class="thumb-img" src="src/images/cycling-team.png" alt="uconn cycling team website"></div></a></li>
+     <li class="tab"><a id="tab_5" href="javascript:tabSwitch_2(5, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img"><img class="thumb-img" src="src/images/latinfest.png" alt="website for latinfest 2014"></div></a></li>
+     <li class="tab"><a id="tab_6" href="javascript:tabSwitch_2(6, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img" data-myorder="6"><img class="thumb-img" src="src/images/tyler.png" alt="tyler technologies"></div></a></li>
+     <li class="tab"><a id="tab_7" href="javascript:tabSwitch_2(7, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img"><img class="thumb-img" src="src/images/columbia.png" alt="columbia university"></div></a></li>
+     <li class="tab"><a id="tab_8" href="javascript:tabSwitch_2(8, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img"><img class="thumb-img" src="src/images/bend-or.png" alt="bend, oregon tourism website"></div></a></li>
+     <li class="tab"><a id="tab_9" href="javascript:tabSwitch_2(9, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img"><img class="thumb-img" src="src/images/california.png" alt="california cuisine website"></div></a></li>
+     <li class="tab"><a id="tab_10" href="javascript:tabSwitch_2(10, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img" data-myorder="10"><img class="thumb-img" src="src/images/portfolio.png" alt="my portfolio"></div></a></li>
+     <li class="tab"><a id="tab_11" href="javascript:tabSwitch_2(11, 11, 'tab_', 'content_');" class="tab active"><div class="thumb-img" data-myorder="11"><img class="thumb-img" src="src/images/heroes.png" alt="your everyday kid heroes"></div></a></li>
+     <li class="tab"><a href="https://www.etsy.com/your/shops/KailaGraceDesigns/"><div class="thumb-img" data-myorder="12"><img class="thumb-img" src="src/images/etsy.png" alt="link to my etsy store"></div></a></li>
 <a href=""><i class="float fa fa-fw fa-angle-right fa-2x"></i></a>
+</div></ul>
 </div>
 
+  <!--===============FIRST WORK PAGE: UCONN COMMUNICATIONS=====================-->
+<div id="content_1" class="content row u-full-width">
 <ul>Projects</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+  <!--===============SECOND WORK PAGE: WEDDING WEBSITE=====================-->
+<div id="content_2" class="content row u-full-width">
+<ul>Projects page 2</ul>
 <li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
 <li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
 </ul>
@@ -190,46 +206,138 @@
 
 
 
+  <!--===============THIRD WORK PAGE: OTHER=====================-->
+<div id="content_3" class="content row u-full-width">
+<ul>Projects page 3</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+
+<!--===============FOURTH WORK PAGE: UCONN CYCLING TEAM=====================-->
+<div id="content_4" class="content row u-full-width">
+<ul>Projects page 4</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+<!--===============FIFTH WORK PAGE: LATINFEST=====================-->
+<div id="content_5" class="content row u-full-width">
+<ul>Projects page 5</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+<!--===============SIXTH WORK PAGE: TYLER TECHNOLOGIES=====================-->
+<div id="content_6" class="content row u-full-width">
+<ul>Projects page 6</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+
+<!--===============SEVENTH WORK PAGE: COLUMBIA=====================-->
+<div id="content_7" class="content row u-full-width">
+<ul>Projects page 7</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+<!--===============EIGTH WORK PAGE: BEND, OREGON=====================-->
+<div id="content_8" class="content row u-full-width">
+<ul>Projects page 8</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+<!--===============NINTH WORK PAGE: CALIFORNIA CUISINE=====================-->
+<div id="content_9" class="content row u-full-width">
+<ul>Projects page 9</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+<!--===============TENTH WORK PAGE: PORTFOLIO=====================-->
+<div id="content_10" class="content row u-full-width">
+<ul>Projects page 10</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+<!--===============ELEVENTH WORK PAGE: EVERYDAY KID HEROES=====================-->
+<div id="content_11" class="content row u-full-width">
+<ul>Projects page 11</ul>
+<li>Along with designers and writers, generated awards website for staff event using a Wordpress CDN.</li>
+<li>Created and implemented site for the video testing team. The site is intended to showcase the video team's work, and modify it for approval before updating the live version on the UConn.edu site. The site launches on an "initialization" page, which uses PHP to create an updated list of the videos (each with a novel URL) that the team adds to a local file. Each URL leads to the test page, which uses a Javascript function to select the appropriate video to show. See the result <a href="video.html">here</a>.</li>
+</ul>
+<li>Generated new webpage for UConn press releases and updates</li>
+</div>
+
+
+</div>
+
+
+
 </div>
 </div>
 
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- mixitup plugin-->
+
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="src/scripts/main.js"></script>
-    <script>
-      $(function(){
-     $('#Container').mixItUp();
-});
-    </script>
-    <!--jQuery UI Widgets -->
-     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-    <!-- OFF CANVAS MENU SCRIPTS-->
+
+        <!-- OFF CANVAS MENU SCRIPTS-->
     <script src="src/scripts/OffCanvasMenuEffects/js/classie.js"></script>
     <script src="src/scripts/OffCanvasMenuEffects/js/main.js"></script>
+      <script> 
+    $(window).load(function() {  
+    document.getElementById("content_1").style.display = "block"; 
+    document.getElementById("content_2").style.display = "none"; 
+    document.getElementById("content_3").style.display = "none"; 
+    document.getElementById("content_4").style.display = "none"; 
+    document.getElementById("content_5").style.display = "none"; 
+    document.getElementById("content_6").style.display = "none"; 
+    document.getElementById("content_7").style.display = "none"; 
+    document.getElementById("content_8").style.display = "none"; 
+    document.getElementById("content_9").style.display = "none"; 
+    document.getElementById("content_10").style.display = "none"; 
+    document.getElementById("content_11").style.display = "none"; 
+    });
+    </script>
+
 
       <script> 
   $(window).load(function() {  
   document.getElementByClassName("thumb_img").style.opacity = .8;
-  
-  });</script>
+  });
+     </script>
 
-    <!--tabs script-->
-<script>
- function tabSwitch_2(active, number, tab_prefix, content_prefix) {
-       
-    for (var i=1; i < number+1; i++) {
-      document.getElementById(content_prefix+i).style.display = 'none';
-      document.getElementById(tab_prefix+i).className = '';
-    }
-    document.getElementById(content_prefix+active).style.display = 'block';
-    document.getElementById(tab_prefix+active).className = 'active';    
-     
-}
-</script>
+  
 <!--/////////////////////////////////////-->
   <script src="src/scripts/ResponsiveMultiLevelMenu/js/jquery.dlmenu.js"></script>
 <script>
@@ -240,7 +348,23 @@ $( '#dl-menu' ).dlmenu({
 
 <!--/////////////////////////////////////-->
 
-<!--_____________________GOOGLE ANALYTICS__________________-->
+
+   
+      <!--tabs script-->
+  <script>
+   function tabSwitch_2(active, number, tab_prefix, content_prefix) {
+         
+      for (var i=1; i < number+1; i++) {
+        document.getElementById(content_prefix+i).style.display = 'none';
+        document.getElementById(tab_prefix+i).className = '';
+      }
+      document.getElementById(content_prefix+active).style.display = 'block';
+      document.getElementById(tab_prefix+active).className = 'active';    
+       
+  }
+  </script>
+
+  <!--_____________________GOOGLE ANALYTICS__________________-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -251,7 +375,6 @@ $( '#dl-menu' ).dlmenu({
   ga('send', 'pageview');
 
 </script>
-   
 
 
 </body>
