@@ -1,5 +1,8 @@
 var gulp = require('gulp');
 
+// require livereload
+livereload = require('gulp-livereload');
+
 
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
@@ -78,6 +81,20 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./css'));
 });
 
+
+//livereload
+
+gulp.task('sass', function() {
+  gulp.src('scss/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./css'))
+    .pipe(livereload());
+});
+
+gulp.task('watch', function() {
+  livereload.listen();
+  gulp.watch('scss/*.scss', ['sass']);
+});
 
 //gulp-size
 var gulp = require('gulp');
