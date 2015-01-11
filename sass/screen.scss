@@ -154,13 +154,14 @@ footer{width:100%;
 float:left;
 }
 
-
+.float-left{float:left;}
+.margin-right{margin-right:70%;}
 /*Page Elements by Class*/
 
-.content p{padding: 15px 5px 15px 5px;
+.home-page {.content p{padding: 15px 5px 15px 5px;
 width:40%;
 font-size:20px;}
-
+}
 .small{
 	font-size:15px;
 	color:$dark-gray;
@@ -380,15 +381,25 @@ left:10px;}
 
 
 
-
 .work-page{margin-top:20px;
            line-height:20px;
 
           .content{padding:0px 25px 25px 0px;
                     font-size:$font-size-normal;
                   ul{font-size:20px;}
+                  h2{font-size:20px;}
                   a{color:$blue;}
-            }
+                  img{height:300px;
+                      width:auto;
+                      margin-right:10px;
+                      margin-bottom:10px;}
+
+}
+            #content_1{
+                      img{height:200px;}
+                    }
+
+            
 
 
 }
