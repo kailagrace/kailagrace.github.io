@@ -401,12 +401,27 @@ left:10px;}
 
 .work-page{margin-top:20px;
            line-height:20px;
-
+           .orange{padding:0;}
           .content{padding:0px 25px 25px 0px;
+                    padding-left:30px;
                     font-size:$font-size-normal;
-                  ul{font-size:20px;}
-                  h2{font-size:20px;}
-                  a{color:$blue;}
+                    .wrapper{padding-bottom:20px;
+                        .full-width{width:100%;}
+                        img{max-width:400px;
+                          width:400px;
+                          height:auto;}
+
+                        }
+                        .left{float:left;width:400px;}
+                        .right{float:right;width:400px;}
+                  h2{font-size:20px;
+                  }
+                  a{color:$blue;
+                    padding:0;
+                    width:auto;}
+                  h1{padding:0;
+                    letter-spacing:1.25px;
+                    font-size:22px;}
                   img{height:300px;
                       width:auto;
                       margin-right:10px;
@@ -418,7 +433,7 @@ left:10px;}
                     }
 
             
-
+              h2{text-transform:uppercase;}
 
 }
 
