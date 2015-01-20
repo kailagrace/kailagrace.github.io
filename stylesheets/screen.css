@@ -711,53 +711,74 @@ a.showLink:hover, a.hideLink:hover {
   }
 
   /* line 451, ../sass/screen.scss */
-  #header-container {
-    margin-left: 100px;
-  }
-
-  /* line 452, ../sass/screen.scss */
   .controls {
     margin-top: -40px;
     font-size: 12px;
     font-stretch: condensed;
   }
-  /* line 455, ../sass/screen.scss */
+  /* line 454, ../sass/screen.scss */
   .controls #header-container {
     margin-top: 120px;
     width: 200%;
   }
-  /* line 458, ../sass/screen.scss */
+  /* line 457, ../sass/screen.scss */
   .controls #header-container h1 {
     font-size: 50px;
   }
-  /* line 459, ../sass/screen.scss */
+  /* line 458, ../sass/screen.scss */
   .controls img#logo-img, .controls #logo-img {
     width: 25%;
     min-width: 90px;
   }
 
-  /* line 463, ../sass/screen.scss */
+  /* line 462, ../sass/screen.scss */
   #page-heading {
     font-size: 50px;
   }
 }
-@media screen and (max-width: 650px) {
-  /* line 470, ../sass/screen.scss */
-  .swap {
+@media screen and (max-width: 709px) and (min-width: 300px) {
+  /* line 469, ../sass/screen.scss */
+  .left, .right, .left img, .right img, .work-page .content .wrapper img {
+    max-width: 400px;
+    width: 80%;
+    margin-right: auto;
+  }
+
+  /* line 474, ../sass/screen.scss */
+  .wrapper .right, .work-page .content .right {
+    float: left;
+  }
+
+  /* line 476, ../sass/screen.scss */
+  #work-page-nav {
     display: none;
   }
-
-  /* line 471, ../sass/screen.scss */
-  .hidden-nav {
-    display: -webkit-box;
+}
+@media screen and (max-width: 815px) and (min-width: 710px) {
+  /* line 483, ../sass/screen.scss */
+  .left, .right, .left img, .right img, .work-page .content .wrapper img {
+    max-width: 700px;
+    width: 600px;
   }
 
-  /* line 472, ../sass/screen.scss */
-  .controls {
-    display: -webkit-box;
+  /* line 485, ../sass/screen.scss */
+  .wrapper .right, .work-page .content .right {
+    float: left;
   }
 }
-/* line 477, ../sass/screen.scss */
+@media screen and (max-width: 870px) and (min-width: 815px) {
+  /* line 493, ../sass/screen.scss */
+  .left, .right, .left img, .right img, .work-page .content .wrapper img {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 871px) {
+  /* line 497, ../sass/screen.scss */
+  .left, .right, .left img, .right img, .work-page .content .wrapper img {
+    max-width: 375px;
+  }
+}
+/* line 501, ../sass/screen.scss */
 div.content.hide {
   display: none;
 }
