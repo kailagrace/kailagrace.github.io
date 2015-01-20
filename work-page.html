@@ -77,73 +77,18 @@
   <!-- import font awesome fonts-->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
 
-  <!-- JQUERY MMENU OFF CANVAS MENU
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link type="text/css" rel="stylesheet" href="src/scripts/jQuery.mmenu-master/demo/css/demo.css" /> 
-    <link type="text/css" rel="stylesheet" href="src/scripts/jQuery.mmenu-master/src/css/jquery.mmenu.all.css" /> 
+<!-- import SLIDER MENU scripts-->
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="src/scripts/jQuery.mmenu-master/src/js/jquery.mmenu.min.all.js"></script> 
-    <script type="text/javascript">
-      $(function() {
-        $('nav#menu').mmenu();
-      });
+      <link rel="stylesheet" type="text/css" href="src/scripts/ResponsiveMultiLevelMenu/css/default.css" />
+      <link rel="stylesheet" type="text/css" href="src/scripts/ResponsiveMultiLevelMenu/css/component.css" />
+      <script src="src/scripts/ResponsiveMultiLevelMenu/js/modernizr.custom.js"></script>
 
-
-      $(function() {
-        $("#menu")
-          .mmenu({
-    offCanvas : {
-      position  : "top",
-      zposition : "front"
-    }
-          }).on(
-            'click',
-            'a[href^="#/"]',
-            function()
-            {
-              alert( "Thank you for clicking, but that's a demo link." );
-              return false;
-            }
-          );
-      });
-
-
-    </script>
-<style>
-  .mm-menu
-      {
-        background: rgba( 0, 0, 0, 0.6 );
-        box-shadow: none !important;
-        text-align: center;
-        color: #fff;
-      }
-      .mm-menu .mm-list
-      {
-        font-size: 18px;
-      }
-      .mm-menu .mm-list li:after
-      {
-        content: none !important;
-      }
-      .mm-menu .mm-list li a
-      {
-        padding: 15px 0;
-      }
-      .mm-menu li a:hover
-      {
-        background: rgba( 255, 255, 255, 0.1 );
-      }
-      .logo
-      {
-        border: 1px solid #fff;
-        line-height: 40px;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin: 35px 0 20px 0;
-      }</style>
-
+<!-- OffCanvasMenu
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="src/scripts/OffCanvasMenuEffects/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="src/scripts/OffCanvasMenuEffects/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="src/scripts/OffCanvasMenuEffects/css/menu_sideslide.css" />
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
 </head>
 <body>
@@ -157,7 +102,7 @@
 <div class="wrapper" id="main-page-wrapper">
   <div class="container">
     
-   <div class="header">
+<!--   <div class="header">
         <a href="#menu"></a>
       </div>
       <div class="content">
@@ -180,7 +125,7 @@
           </li>
           </li>
         </ul>
-      </nav>
+      </nav>-->
       <!--//////////////////////////////////////////////////////-->
 
 
@@ -206,11 +151,7 @@
 
   </div>
 
-  <!--//////////////////////////////////////////////////////-->
-
-
-   
-            
+  
       
 
 
@@ -241,6 +182,47 @@
 
 <a href="next-button"><i class="float fa fa-fw fa-angle-right fa-2x"></i></a>
 </div></ul>
+
+<!--//////////////////////////////////////////////////////-->
+
+
+
+
+
+
+  <div class="main clearfix">
+
+  <div class="column row u-full-width">
+
+
+
+
+
+
+
+            <div id="dl-menu" class="dl-menuwrapper">
+              <button class="dl-trigger">Open Menu</button>
+              <ul class="dl-menu">
+          <li><a href="kailagrace.com">Home</a></li>
+          <li><a href="#content_1">UConn Communications Site</a></li>
+          <li><a href="#content_2">Wedding Website</a></li>
+           <li><a href="#content_3">Other Projects</a></li>
+            <li><a href="#content_4">UConn Cycling Team</a></li>
+             <li><a href="#content_5">Latinfest</a></li>
+              <li><a href="#content_6">Tyler Technologies</a></li>
+               <li><a href="#content_7">Columbia University Oschner Lab</a></li>
+                <li><a href="#content_8">Bend, Oregon</a></li>
+                <li><a href="#content_9">California Cuisine</a></li>
+                <li><a href="#content_10">My Portfolio Process</a></li>
+              </ul>
+            </div><!-- /dl-menuwrapper -->
+          </div>
+          <p>Click logo for menu</p>
+        </div>
+
+        <!--//////////////////////////////////////////////////////-->
+            
+
 </div>
 
 <div class="tabs">
@@ -446,6 +428,7 @@
 <div id="content_4" class="content #tab_4 row u-full-width">
   <div class="tab">
        <div class="content">
+           <div class="wrapper full-width">
 <h1>University of Connecticut Cycling Team</h1>
 <H5><span class="orange">Personal learning challenges:</span> Use only HTML5 Boilerplate to develop a fully-responsive, fully optimized web solution for the UConn Cycling team. Develop an e-commerce solution for the team to sell gear online. Develop a users-only website forum for the cyclists to use as a communication tool. Learn and utilize PHP.</h5>
   <a href="http://webdesign.digitalmediauconn.org/kgm11001/html5-boilerplate-4.3.0/cycling-team.html">View the result here.</a>
@@ -470,11 +453,12 @@
 </div>
   </div>
 </div>
-
+</div>
 <!--===============FIFTH WORK PAGE: LATINFEST=====================-->
 <div id="content_5" class="content #tab_5 row u-full-width">
   <div class="tab">
        <div class="content">
+             <div class="wrapper full-width">
 <h1>Latinfest Website</h1>
 <H5><span class="orange">Personal learning challenge:</span> Use picture and/or srcset elements for optimal image load time, utilize Flickr API to source images</h5>
 <p>I developed a website to harness the flickr API and highlight a recent event on the UConn campus- Latinfest of 2014. Members of the group can add photos to their Flickr page and see them automatically uploaded to the website, which showcases them both in a grid format and in a lightbox-esque magnified version. The website was optimized for speed, and utilized "picture" and "Srcset" elements in order to load images in the most efficient manner. <a target="_blank" href="http://webdesign.digitalmediauconn.org/kgm11001/latinfest-ajax-proj/latinfest.html">View the finished product here</a></p>
@@ -487,12 +471,14 @@
 </div>
 </div>
 </div>
+</div>
 
 
 <!--===============SIXTH WORK PAGE: TYLER TECHNOLOGIES=====================-->
 <div id="content_6" class="content #tab_6 row u-full-width">
   <div class="tab">
        <div class="content">
+           <div class="wrapper full-width">
 <h1>Tyler Technologies</h1>
 <ul>
   <li>Involved in Design, UX, and Development</li>
@@ -522,7 +508,7 @@
 
     <a href="#" id="example64-hide" class="hideLink" onclick="showHide('example64');return false;">Hide additional information.</a>
 </div>
-
+</div>
 </div>
 </div>
 </div>
@@ -533,6 +519,7 @@
 <div id="content_7" class="content #tab_7 row u-full-width">
   <div class="tab">
        <div class="content">
+           <div class="wrapper full-width">
 <h1>Columbia University Oschner Lab</h1>
 <p>During the summer of 2013, I worked for Columbia University's Oschner Laboratory in New York. At this point, I was a student of neuroscience and my role was as a resident assistant, running participants, performing scans, analyzing brain activity, grading surveys, and running statistics. However, I was also a student of computer science, and when my graduate student realized that I was capable of design and programming, she asked me to create the marketing materials (posters, stickers and flyers) and make the website for their lab. I designed several new images to rebrand the lab as more child-focused. One of these is here:</p>
 <a href="src/images/columbia/little-boy.png" data-lightbox="image-39">
@@ -563,7 +550,7 @@
 <a href="src/images/columbia/contact.png" data-lightbox="image-38">
 <img alt ="columbia mockup" src="src/images/columbia/contact.png">
 </a>
-
+</div>
 </div>
 </div>
 </div>
@@ -573,6 +560,7 @@
 <div id="content_8" class="content #tab_8 row u-full-width">
   <div class="tab">
        <div class="content">
+           <div class="wrapper full-width">
 <h1>Bend, Oregon Tourism Site</h1>
 <p>This was a project to create a website for my favorite city- a single-page effort to showcase its highlights, and attract tourists. </p>
 <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">See the planning process.</a>
@@ -637,7 +625,7 @@
 <img alt ="bend oregon" src="src/images/bend-or/scsht2.png">
 </a>
 
-
+</div>
 </div>
 </div>
 </div>
@@ -646,6 +634,7 @@
 <div id="content_9" class="content #tab_9 row u-full-width">
   <div class="tab">
        <div class="content">
+           <div class="wrapper full-width">
 <h1>California Cuisine Website</h1>
 <h5><span class="orange">Personal Learning Challenge:</span></h5> This was the first website I used jQuery with, for the sort function on my archive page.
 <p>This website evolved from an assigned project to create a recipe website. I chose to stay true to my west-coast roots and create a website that reflected the food found and created in my home state-California. The concept behind my design was this: I used a map of CA as the basis for the user's search. When a user hovered over a pin on the map, the recipe for that location would slide out and appear, using CSS transitions. Since this might frustrate some users, and it impleded the efficiency, I also added a navigation menu. The homepage with this navigation is what you see in the images below. The site is fully responsive. Versions of the homepage of the site in desktop, tablet, and mobile are shown here.</p>
@@ -711,7 +700,7 @@
 </a>
 
 </a>
-
+</div>
 </div>
 </div>
 </div>
@@ -721,6 +710,7 @@
 <div id="content_10" class="content #tab_10 row u-full-width">
   <div class="tab">
        <div class="content">
+           <div class="wrapper full-width">
 <h1>Building My Portfolio</h1>
 <p>The process of building my portfolio has been a long one, and has been continually revised as I've grown and evolved as a designer and developer.</p>
 <a href="#" id="example4-show" class="showLink" onclick="showHide('example4');return false;"> See the planning process.</a>
@@ -849,12 +839,13 @@
 </div>
 </div>
 </div>
-
+</div>
 
 <!--===============ELEVENTH WORK PAGE: EVERYDAY KID HEROES=====================-->
 <div id="content_11" class="content #tab_11 row u-full-width">
   <div class="tab">
        <div class="content">
+   <div class="wrapper full-width">
 <h1>Human Factors Design Presentation</h1>
 <h4>User-Experience Overhaul for University of Connecticut's Academic Student Services</h4>
 <p>For a final project in my Human Factors Engineering course, I met with the leading staff in UConn's Academic Student Services Center and agreed to assist them with a complete overhaul of their online website and their marketing strategy. In order to do this, I interviewed and surveyed students on campus to find out the answer to two main questions: 1. Whether they were aware of the ASC and the services that the center provides, and 2. Whether they had utilized the website. Using this information and that provided by the ASC, I created an individual Human Factors Analysis of their system, noting areas for improvement. Once complete, I brought in seven other students for User-Experience testing in order to test the usefulness and efficiency of the ASC's site. I tested their ability to achieve certain goals using the new sitemap and the old one, and recorded transcripts of our conversations, where I garnered information about their interactions with the site, both positive and negative. This unveiled other aspects of the department's website and marketing that were not reaching their full potential.</p>
@@ -868,7 +859,7 @@
 <a href="src/images/hfe/mockup_3.png" data-lightbox="image-11"><img alt ="blackbird tavern sitemap" src="src/images/hfe/mockup_3.png"></a>
 <a href="src/images/hfe/mockup_2.png" data-lightbox="image-11"><img alt ="blackbird tavern sitemap" src="src/images/hfe/mockup_2.png"></a>
 <a href="src/images/hfe/mockup_5.png" data-lightbox="image-11"><img alt ="blackbird tavern sitemap" src="src/images/hfe/mockup_5.png"></a>
-
+</div>
 </div>
 </div>
 </div>
@@ -898,6 +889,15 @@
         <!-- OFF CANVAS MENU SCRIPTS-->
     <script src="src/scripts/OffCanvasMenuEffects/js/classie.js"></script>
     <script src="src/scripts/OffCanvasMenuEffects/js/main.js"></script>
+
+<!--/////////////////////////////////////-->
+    <script src="src/scripts/ResponsiveMultiLevelMenu/js/jquery.dlmenu.js"></script>
+  <script>
+  $( '#dl-menu' ).dlmenu({
+      animationClasses : { classin : 'animation-class-name', classout : 'animation-class-name' }
+  });
+  </script>
+
 
       <!--lIGHTBOX SCRIPT-->
       <script src="src/scripts/lightbox/js/lightbox.min.js"></script>

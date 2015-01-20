@@ -12,7 +12,7 @@ body,
 .content-wrap{
 	overflow:visible;
 }
-.container, .content-wrap{overflow:hidden;}
+
 
 .container {
 
@@ -191,7 +191,6 @@ body,
 
 .icon-list a span {
 	margin-left: 10px;
-	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: light;
 	font-weight: 300;
 	font-size: 16px;

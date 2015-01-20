@@ -683,6 +683,11 @@ a.showLink:hover, a.hideLink:hover {
   text-transform: uppercase;
 }
 
+/* line 441, ../sass/screen.scss */
+div.content.hide {
+  display: none;
+}
+
 /* line 442, ../sass/screen.scss */
 .tab .active .thumb-img {
   opacity: .8;
@@ -732,53 +737,83 @@ a.showLink:hover, a.hideLink:hover {
   }
 
   /* line 462, ../sass/screen.scss */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 465, ../sass/screen.scss */
   #page-heading {
     font-size: 50px;
   }
+
+  /* line 466, ../sass/screen.scss */
+  .left, .right, .left img, .right img, .work-page .content .wrapper img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  /* line 470, ../sass/screen.scss */
+  #work-page-nav {
+    display: none;
+  }
+
+  /* line 471, ../sass/screen.scss */
+  .work-page .content {
+    padding-left: 20px;
+  }
 }
-@media screen and (max-width: 709px) and (min-width: 300px) {
-  /* line 469, ../sass/screen.scss */
+@media screen and (max-width: 709px) and (min-width: 601px) {
+  /* line 475, ../sass/screen.scss */
   .left, .right, .left img, .right img, .work-page .content .wrapper img {
     max-width: 400px;
-    width: 80%;
+    width: 100%;
     margin-right: auto;
   }
 
-  /* line 474, ../sass/screen.scss */
+  /* line 480, ../sass/screen.scss */
   .wrapper .right, .work-page .content .right {
     float: left;
   }
 
-  /* line 476, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   #work-page-nav {
     display: none;
   }
+
+  /* line 483, ../sass/screen.scss */
+  #logo-img {
+    display: none;
+  }
+
+  /* line 484, ../sass/screen.scss */
+  #page-heading {
+    margin-left: 100px;
+    font-size: 38px;
+    margin-top: 35px;
+  }
 }
 @media screen and (max-width: 815px) and (min-width: 710px) {
-  /* line 483, ../sass/screen.scss */
+  /* line 493, ../sass/screen.scss */
   .left, .right, .left img, .right img, .work-page .content .wrapper img {
     max-width: 700px;
     width: 600px;
   }
 
-  /* line 485, ../sass/screen.scss */
+  /* line 495, ../sass/screen.scss */
   .wrapper .right, .work-page .content .right {
     float: left;
   }
 }
 @media screen and (max-width: 870px) and (min-width: 815px) {
-  /* line 493, ../sass/screen.scss */
+  /* line 503, ../sass/screen.scss */
   .left, .right, .left img, .right img, .work-page .content .wrapper img {
     max-width: 350px;
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 871px) {
-  /* line 497, ../sass/screen.scss */
+  /* line 507, ../sass/screen.scss */
   .left, .right, .left img, .right img, .work-page .content .wrapper img {
     max-width: 375px;
   }
-}
-/* line 501, ../sass/screen.scss */
-div.content.hide {
-  display: none;
 }
