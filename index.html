@@ -19,8 +19,9 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="src/styles/css/normalize.css">
-    <link rel="stylesheet" href="src/styles/css/skeleton.css">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/skeleton.css">
+    <link rel="stylesheet" href="src/styles/screen.css">
 
     <!--jQuery Dependencies
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,19 +30,7 @@
 
     <!-- SCSS VIA COMPASS/SASS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="src/styles/stylesheets/sass/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="src/styles/stylesheets/sass/print.css" media="print" rel="stylesheet" type="text/css" />
-    <link href="src/styles/stylesheets/sass/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-
-    <link href="src/styles/sass/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="src/styles/sass/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <link href="src/styles/sass/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
+    <link href="src/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
 
   <!-- PLUGINS AND DEPENDENCIES
@@ -499,55 +488,6 @@
   </script>
 
 
- <script> 
-    $(window).load(function() {  
-    for ( var i = 1; i < 12; i++ ) {
-    document.getElementById("content_" + i).style.display = "none"; 
-     }
-    settab();
-
-    });
-
-   function tabSwitch_2(active, number, tab_prefix, content_prefix) {
-         
-      for (var i=1; i < number+1; i++) {
-        document.getElementById(content_prefix+i).style.display = 'none';
-        document.getElementById(tab_prefix+i).className = '';
-      }
-      document.getElementById(content_prefix+active).style.display = 'block';
-      document.getElementById(tab_prefix+active).className = 'active';        
-    }
-    
-
-
-    function settab(){
-      var hash = window.location.hash;
-      var numberone = hash.charAt(1);
-      var numbertwo = hash.charAt(2);
-    var tabcontent = document.getElementById("content_" + numberone + numbertwo);
-     tabcontent.style.display = "block";
-
-    }
-
-    function changetab(newtab){
-      window.location.hash = (newtab);
-    }
-
-//show and hide content//
-  function showHide(shID) {
-   if (document.getElementById(shID)) {
-      if (document.getElementById(shID+'-show').style.display != 'none') {
-         document.getElementById(shID+'-show').style.display = 'none';
-         document.getElementById(shID).style.display = 'block';
-      }
-      else {
-         document.getElementById(shID+'-show').style.display = 'inline';
-         document.getElementById(shID).style.display = 'none';
-      }
-   }
-}
-
-    </script>
     
 
 <!--_____________________GOOGLE ANALYTICS__________________-->
