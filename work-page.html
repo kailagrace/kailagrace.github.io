@@ -77,18 +77,113 @@
   <!-- import font awesome fonts-->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
 
+  <!-- JQUERY MMENU OFF CANVAS MENU
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link type="text/css" rel="stylesheet" href="src/scripts/jQuery.mmenu-master/demo/css/demo.css" /> 
+    <link type="text/css" rel="stylesheet" href="src/scripts/jQuery.mmenu-master/src/css/jquery.mmenu.all.css" /> 
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="src/scripts/jQuery.mmenu-master/src/js/jquery.mmenu.min.all.js"></script> 
+    <script type="text/javascript">
+      $(function() {
+        $('nav#menu').mmenu();
+      });
 
 
+      $(function() {
+        $("#menu")
+          .mmenu({
+    offCanvas : {
+      position  : "top",
+      zposition : "front"
+    }
+          }).on(
+            'click',
+            'a[href^="#/"]',
+            function()
+            {
+              alert( "Thank you for clicking, but that's a demo link." );
+              return false;
+            }
+          );
+      });
 
+
+    </script>
+<style>
+  .mm-menu
+      {
+        background: rgba( 0, 0, 0, 0.6 );
+        box-shadow: none !important;
+        text-align: center;
+        color: #fff;
+      }
+      .mm-menu .mm-list
+      {
+        font-size: 18px;
+      }
+      .mm-menu .mm-list li:after
+      {
+        content: none !important;
+      }
+      .mm-menu .mm-list li a
+      {
+        padding: 15px 0;
+      }
+      .mm-menu li a:hover
+      {
+        background: rgba( 255, 255, 255, 0.1 );
+      }
+      .logo
+      {
+        border: 1px solid #fff;
+        line-height: 40px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 35px 0 20px 0;
+      }</style>
 
 
 </head>
 <body>
 
+<div id="page">
+
+
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="wrapper" id="main-page-wrapper">
   <div class="container">
+    
+   <div class="header">
+        <a href="#menu"></a>
+      </div>
+      <div class="content">
+        <nav id="menu" class="mm-menu mm-horizontal mm-white mm-slide mm-offcanvas mm-hasheader mm-hassearch">
+        <ul>
+          <li><a href="kailagrace.com">Home</a></li>
+          <li><a href="#content_1">UConn Communications Site</a></li>
+          <li><a href="#content_2">Wedding Website</a></li>
+           <li><a href="#content_3">Other Projects</a></li>
+            <li><a href="#content_4">UConn Cycling Team</a></li>
+             <li><a href="#content_5">Latinfest</a></li>
+              <li><a href="#content_6">Tyler Technologies</a></li>
+               <li><a href="#content_7">Columbia University Oschner Lab</a></li>
+                <li><a href="#content_8">Bend, Oregon</a></li>
+                <li><a href="#content_9">California Cuisine</a></li>
+                <li><a href="#content_10">My Portfolio Process</a></li>
+          </li>
+          <li><a href="#content_11">UX &AMP; The Academic Services Center</a></li>
+          <li><a href="www.etsy.com/kailagracedesigns">Link to My Etsy Store</a></li>
+          </li>
+          </li>
+        </ul>
+      </nav>
+      <!--//////////////////////////////////////////////////////-->
+
+
     <header>
     <div class="row u-full-width">
       <div class="eight columns">
@@ -114,15 +209,14 @@
   <!--//////////////////////////////////////////////////////-->
 
 
-
-      <!--//////////////////////////////////////////////////////-->
-
+   
+            
+      
 
 
 
 
   </header>
-
 
 
 
@@ -783,9 +877,14 @@
 </div>
 
 
+</div>
+</div>
+</div>
 
 </div>
-</div>
+    
+
+
 </div>
 
 <!-- End Document
