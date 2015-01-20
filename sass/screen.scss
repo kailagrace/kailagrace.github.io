@@ -427,7 +427,8 @@ left:10px;}
                       width:auto;
                       margin-right:10px;
                       margin-bottom:10px;}
-                      h5{letter-spacing:.02rem;}
+                      h5, h4{letter-spacing:.02rem;}
+                      h4{font-weight:bold;}
 }
             #content_1{
                       img{height:200px;}

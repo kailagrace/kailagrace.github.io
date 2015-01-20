@@ -667,93 +667,97 @@ a.showLink:hover, a.hideLink:hover {
   margin-bottom: 10px;
 }
 /* line 430, ../sass/screen.scss */
-.work-page .content h5 {
+.work-page .content h5, .work-page .content h4 {
   letter-spacing: .02rem;
 }
-/* line 433, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
+.work-page .content h4 {
+  font-weight: bold;
+}
+/* line 434, ../sass/screen.scss */
 .work-page #content_1 img {
   height: 200px;
 }
-/* line 437, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .work-page h2 {
   text-transform: uppercase;
 }
 
-/* line 441, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .tab .active .thumb-img {
   opacity: .8;
 }
 
-/* line 442, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .tab .thumb-img {
   opacity: 1;
 }
 
-/* line 443, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .back-button {
   width: 50px;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .next-button {
   width: 50px;
 }
 
 /* =====MEDIA QUERIES ===========*/
 @media screen and (max-width: 600px) {
-  /* line 449, ../sass/screen.scss */
+  /* line 450, ../sass/screen.scss */
   #page-navigation {
     display: none;
   }
 
-  /* line 450, ../sass/screen.scss */
+  /* line 451, ../sass/screen.scss */
   #header-container {
     margin-left: 100px;
   }
 
-  /* line 451, ../sass/screen.scss */
+  /* line 452, ../sass/screen.scss */
   .controls {
     margin-top: -40px;
     font-size: 12px;
     font-stretch: condensed;
   }
-  /* line 454, ../sass/screen.scss */
+  /* line 455, ../sass/screen.scss */
   .controls #header-container {
     margin-top: 120px;
     width: 200%;
   }
-  /* line 457, ../sass/screen.scss */
+  /* line 458, ../sass/screen.scss */
   .controls #header-container h1 {
     font-size: 50px;
   }
-  /* line 458, ../sass/screen.scss */
+  /* line 459, ../sass/screen.scss */
   .controls img#logo-img, .controls #logo-img {
     width: 25%;
     min-width: 90px;
   }
 
-  /* line 462, ../sass/screen.scss */
+  /* line 463, ../sass/screen.scss */
   #page-heading {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 469, ../sass/screen.scss */
+  /* line 470, ../sass/screen.scss */
   .swap {
     display: none;
   }
 
-  /* line 470, ../sass/screen.scss */
+  /* line 471, ../sass/screen.scss */
   .hidden-nav {
     display: -webkit-box;
   }
 
-  /* line 471, ../sass/screen.scss */
+  /* line 472, ../sass/screen.scss */
   .controls {
     display: -webkit-box;
   }
 }
-/* line 476, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 div.content.hide {
   display: none;
 }
