@@ -104,12 +104,14 @@
       </div>
       <div class="row u-full-width hidden-mobile">
               <div class="eight columns">
+          
       <nav id="page-navigation">
-        <ul class="tabs">
-          <li class="tab active"><a id="tab_1" href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_');" class="tab active">Work</a></li>
-          <li class="tab"><a id ="tab_2" href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_');" class="tab">About</a></li>
-          <li class="tab"><a id="tab_3" href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_');" class="tab">Contact</a></li>
+      <ul id="my-tab-list" class="nav nav-tabs tabs">
+          <li class="tab active"><a data-myorder="1" id="tab_1" href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_');" class="tab active">Work</a></li>
+          <li class="tab"><a id ="tab_2" data-myorder="2" href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_');" class="tab">About</a></li>
+          <li class="tab"><a id="tab_3" data-myorder="3" href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_');" class="tab">Contact</a></li>
           <li class="tab"><a href="http://kailagmanca.wordpress.com">Blog<i class="fa fa-fw fa-arrow-circle-right"></i></a></li>
+
         </ul>
       </nav>
 </div>
@@ -132,16 +134,16 @@
 
 
             <div id="dl-menu" class="dl-menuwrapper">
-              <button class="dl-trigger">Open Menu</button>
+              <img id="mobile-navigation-icon" src="src/images/Logo.png" class="dl-trigger">
               <ul class="dl-menu">
                 <li>
-                  <a href="#home">Work</a>
+                  <a href="#content_1">Work</a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#content_2">About</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="#content_3">Contact</a>
                 </li>
                 <li>
                   <a href="#">Blog</a>
@@ -153,7 +155,7 @@
 
         <!--//////////////////////////////////////////////////////-->
 
-
+        <p id="icon-info" class="hidden-desktop">Click for menu</p>
 
 
 
@@ -495,6 +497,59 @@
       animationClasses : { classin : 'animation-class-name', classout : 'animation-class-name' }
   });
   </script>
+
+
+ <script> 
+    $(window).load(function() {  
+    for ( var i = 1; i < 12; i++ ) {
+    document.getElementById("content_" + i).style.display = "none"; 
+     }
+    settab();
+
+    });
+
+   function tabSwitch_2(active, number, tab_prefix, content_prefix) {
+         
+      for (var i=1; i < number+1; i++) {
+        document.getElementById(content_prefix+i).style.display = 'none';
+        document.getElementById(tab_prefix+i).className = '';
+      }
+      document.getElementById(content_prefix+active).style.display = 'block';
+      document.getElementById(tab_prefix+active).className = 'active';        
+    }
+    
+
+
+    function settab(){
+      var hash = window.location.hash;
+      var numberone = hash.charAt(1);
+      var numbertwo = hash.charAt(2);
+    var tabcontent = document.getElementById("content_" + numberone + numbertwo);
+     tabcontent.style.display = "block";
+
+    }
+
+    function changetab(newtab){
+      window.location.hash = (newtab);
+    }
+
+//show and hide content//
+  function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+
+    </script>
+    
+
 <!--_____________________GOOGLE ANALYTICS__________________-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -506,6 +561,8 @@
   ga('send', 'pageview');
 
 </script>
+
+
   <!--/////////////////////////////////////-->
 
      
