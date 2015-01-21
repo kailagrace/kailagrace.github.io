@@ -933,12 +933,6 @@ else window.onload = downloadJSAtOnload;
 
 
 
-            <script> 
-    $(window).load(function() {  
-    document.getElementById("content_1").style.display = "block"; 
-    document.getElementById("content_2").style.display = "none"; 
-    document.getElementById("content_3").style.display = "none"; 
-    });</script>
 
       <!--tabs script-->
   <script>
@@ -970,16 +964,8 @@ else window.onload = downloadJSAtOnload;
       <script src="src/scripts/lightbox/js/lightbox.min.js"></script>
       
  <script> 
-    $(document).ready(function() {  
-    for ( var i = 1; i < 12; i++ ) {
-    document.getElementById("content_" + i).style.display = "none"; 
-     settab();
-     }
-    
-    });
 
-    
-    function settab(){
+   function settab(){
       var hash = window.location.hash;
       var numberone = hash.charAt(1);
       var numbertwo = hash.charAt(2);
@@ -989,6 +975,17 @@ else window.onload = downloadJSAtOnload;
     function changetab(newtab){
       window.location.hash = (newtab);
     }
+
+    $(document).ready(function() {  
+    for ( var i = 1; i < 3; i++ ) {
+    document.getElementById("content_" + i).style.display = "none"; 
+     settab();
+     }
+    
+    });
+
+    
+ 
 //show and hide content//
   function showHide(shID) {
    if (document.getElementById(shID)) {
@@ -1003,18 +1000,6 @@ else window.onload = downloadJSAtOnload;
    }
 }
     </script>
-
-    
-
-
-
-   
-
-
-
-
-
-
 
 </body>
 
