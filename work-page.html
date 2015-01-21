@@ -968,37 +968,21 @@ else window.onload = downloadJSAtOnload;
    function settab(){
       var hash = window.location.hash;
       var numberone = hash.charAt(1);
-      var numbertwo = hash.charAt(2);
-    var tabcontent = document.getElementById("content_" + numberone + numbertwo);
+    var tabcontent = document.getElementById("content_" + numberone);
      tabcontent.style.display = "block";
     }
     function changetab(newtab){
       window.location.hash = (newtab);
     }
 
-    $(document).ready(function() {  
-    for ( var i = 1; i < 3; i++ ) {
+    $(window).load(function() {  
+    for ( var i = 1; i < 4; i++ ) {
     document.getElementById("content_" + i).style.display = "none"; 
      settab();
      }
     
     });
 
-    
- 
-//show and hide content//
-  function showHide(shID) {
-   if (document.getElementById(shID)) {
-      if (document.getElementById(shID+'-show').style.display != 'none') {
-         document.getElementById(shID+'-show').style.display = 'none';
-         document.getElementById(shID).style.display = 'block';
-      }
-      else {
-         document.getElementById(shID+'-show').style.display = 'inline';
-         document.getElementById(shID).style.display = 'none';
-      }
-   }
-}
     </script>
 
 </body>
