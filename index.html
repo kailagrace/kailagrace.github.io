@@ -85,9 +85,9 @@
           
       <nav id="page-navigation">
       <ul id="my-tab-list" class="nav nav-tabs tabs">
-          <li class="tab active"><a data-myorder="1" id="tab_1" href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_');" class="tab active">Work</a></li>
-          <li class="tab"><a id ="tab_2" data-myorder="2" href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_');" class="tab">About</a></li>
-          <li class="tab"><a id="tab_3" data-myorder="3" href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_');" class="tab">Contact</a></li>
+          <li class="tab active"><a data-myorder="1" id="tab_1" href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_'); changetab(1);" class="tab active">Work</a></li>
+          <li class="tab"><a id ="tab_2" data-myorder="2" href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_'); changetab(2);" class="tab">About</a></li>
+          <li class="tab"><a id="tab_3" data-myorder="3" href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_');changetab(3); " class="tab">Contact</a></li>
           <!--<li class="tab"><a href="http://kailagmanca.wordpress.com">Blog<i class="fa fa-fw fa-arrow-circle-right"></i></a></li>-->
 
         </ul>
@@ -114,9 +114,9 @@
             <div id="dl-menu" class="dl-menuwrapper">
               <img id="mobile-navigation-icon" src="src/images/Logo.png" class="dl-trigger">
               <ul class="dl-menu">
-                <li class="tab active"><a data-myorder="1" id="tab_1" href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_');" class="tab active">Work</a></li>
-          <li class="tab"><a id ="tab_2" data-myorder="2" href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_');" class="tab">About</a></li>
-          <li class="tab"><a id="tab_3" data-myorder="3" href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_');" class="tab">Contact</a></li>
+                <li class="tab active"><a data-myorder="1" id="tab_1" href="javascript:tabSwitch_2(1, 3, 'tab_', 'content_'); changetab(1);" class="tab active">Work</a></li>
+          <li class="tab"><a id ="tab_2" data-myorder="2" href="javascript:tabSwitch_2(2, 3, 'tab_', 'content_'); changetab(2);" class="tab">About</a></li>
+          <li class="tab"><a id="tab_3" data-myorder="3" href="javascript:tabSwitch_2(3, 3, 'tab_', 'content_'); changetab(3);" class="tab">Contact</a></li>
           <li class="tab"><a href="http://kailagmanca.wordpress.com">Blog<i class="fa fa-fw fa-arrow-circle-right"></i></a></li>
               </ul>
             </div><!-- /dl-menuwrapper -->
@@ -157,7 +157,7 @@
 
   <div class="pages">
   <!--MY WORK SHOWCASE PAGE-->
-  <div id="content_1" class="content row u-full-width">
+  <div id="content_1" class=" #tab_1 content row u-full-width">
 
     <div class="controls hidden-mobile no-scroll row u-full-width">
 
@@ -199,7 +199,7 @@
   </div>
 
   <!--ABOUT ME PAGE-->
-  <div id="content_2" class="content row u-full-width">
+  <div id="content_2" class="content  #tab_2 row u-full-width">
 
 
     <!--<div id="about-header">
@@ -299,7 +299,7 @@
   </div>
 
   <!--CONTACT ME PAGE-->
-  <div id="content_3" class="content row u-full-width">
+  <div id="content_3" class="content  #tab_3 row u-full-width">
     <div class="eight-columns">
 <p>This form will copy the information you enter into an email to me (this site doesn't support actual working forms). But all you have to do is click send! I'll get back to you within one business day.</p>
  <form name="contactform" method="post" action="mailto:hello@kailagrace.com">
@@ -480,6 +480,30 @@ else window.onload = downloadJSAtOnload;
        
   }
   </script>
+<script> 
+    $(document).ready(function() {  
+    for ( var i = 1; i < 12; i++ ) {
+    document.getElementById("content_" + i).style.display = "none"; 
+     settab();
+     }
+    
+    });
+
+    function settab(){
+      var hash = window.location.hash;
+      var numberone = hash.charAt(1);
+      var numbertwo = hash.charAt(2);
+    var tabcontent = document.getElementById("content_" + numberone + numbertwo);
+     tabcontent.style.display = "block";
+    }
+  function changetab(newtab){
+      window.location.hash = (newtab);
+    }
+
+
+
+    </script>
+
   <!--/////////////////////////////////////-->
     <script src="src/scripts/ResponsiveMultiLevelMenu/js/jquery.dlmenu.js"></script>
   <script>

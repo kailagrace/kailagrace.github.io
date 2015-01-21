@@ -166,6 +166,21 @@
           <p d="mobile-navigation-icon" class="desktop-hidden">Click for menu</p>
         </div>
 
+ <div class="row u-full-width hidden-mobile">
+              <div class="eight columns">
+          
+      <nav id="page-navigation">
+      <ul id="my-tab-list" class="nav nav-tabs tabs">
+          <li class="tab active"><a href="" class="tab active">Work</a></li>
+          <li class="tab"><a id ="tab_2" href="" class="tab">About</a></li>
+          <li class="tab"><a id="tab_3" href="" class="tab">Contact</a></li>
+          <!--<li class="tab"><a href="http://kailagmanca.wordpress.com">Blog<i class="fa fa-fw fa-arrow-circle-right"></i></a></li>-->
+
+        </ul>
+      </nav>
+</div>
+
+    </div>
 
 
 
@@ -962,15 +977,7 @@ else window.onload = downloadJSAtOnload;
      }
     
     });
-   function tabSwitch_2(active, number, tab_prefix, content_prefix) {
-         
-      for (var i=1; i < number+1; i++) {
-        document.getElementById(content_prefix+i).style.display = 'none';
-        document.getElementById(tab_prefix+i).className = '';
-      }
-      document.getElementById(content_prefix+active).style.display = 'block';
-      document.getElementById(tab_prefix+active).className = 'active';        
-    }
+
     
     function settab(){
       var hash = window.location.hash;
