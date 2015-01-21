@@ -51,10 +51,6 @@ $twenty-five: 25px 25px 25px 25px;
 /*colors*/
 $link-color:#b6d4d0;
 
-.content { 
-	width:$full-width;
-	margin-top:25px;
-}
 
 
 
@@ -244,25 +240,20 @@ float:left;}
 
 
 #header-container{	
-	position:absolute;
+  h1{padding-top:30px;}
 	font-size:$font-size-medium;
-	margin-top:3%;
   a{color:black;
     text-decoration:none;}
 }
 
-#page-heading{
-	margin-top:5%;
 
-  }
 
 nav#page-navigation a{ color:black;}
  #page-navigation{
   	position:relative;
   	width:$full-width;
-  	left:83px;
-  	top:60px;
-  	margin-top:3%;
+  	left:90px;
+    top:-20px;
   	font-family: 'Karma' serif;
   }
 
@@ -270,7 +261,7 @@ nav#page-navigation a{ color:black;}
 img{width:$thumb-image;}
 
 #logo-img{
-	width:$tiny-image;
+	width:90px;
 	padding:$standard-padding;
 	margin-right:10px;
 }
@@ -332,8 +323,7 @@ float:left;
 padding-bottom:20px;}
 
 #about-header{position:absolute;}
-#about-header h1{position:relative;
-top:405px;
+#about-header h1{
 z-index:5;
 font-size:160px;
 color:white;
