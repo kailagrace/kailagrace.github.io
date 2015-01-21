@@ -537,6 +537,9 @@ padding:0;
 width:auto;
 }
 
+.wrapper .right, .work-page .content .right{float:left;
+                                             margin:auto;}
+
   .left, .right, .left img, .right img, .work-page .content .wrapper img{max-width:700px;
                                                                         width:600px;}
   .wrapper .right, .work-page .content .right{float:left;}
