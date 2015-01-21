@@ -439,7 +439,6 @@ window.attachEvent("onload", downloadJSAtOnload);
 else window.onload = downloadJSAtOnload;
 </script>
 
-
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <script src="src/scripts/ResponsiveMultiLevelMenu/js/modernizr.custom.js"></script>
@@ -461,7 +460,8 @@ else window.onload = downloadJSAtOnload;
       <script src="src/scripts/OffCanvasMenuEffects/js/classie.js"></script>
       <script src="src/scripts/OffCanvasMenuEffects/js/main.js"></script>
 
-        
+       
+
 
       <!--tabs script-->
   <script>
@@ -508,6 +508,11 @@ else window.onload = downloadJSAtOnload;
       var numbertwo = hash.charAt(2);
     var tabcontent = document.getElementById("content_" + numberone + numbertwo);
      tabcontent.style.display = "block";
+     for ( var numberone=""; )  {  
+    document.getElementById("content_1").style.display = "block"; 
+    document.getElementById("content_2").style.display = "none"; 
+    document.getElementById("content_3").style.display = "none"; 
+    });
     }
     function changetab(newtab){
       window.location.hash = (newtab);
