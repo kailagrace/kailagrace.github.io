@@ -81,7 +81,9 @@ font-family:$Karma-font-stack;
   color: $dark-gray;
   letter-spacing: .1px;
 }
+footer{ a{ color:black;
 
+  }}
 header {
 	height:15%;
 	margin-top:3%;
@@ -99,7 +101,7 @@ font-family:$Futura-font-stack;}
 
 .pages{font-family:$Karma-font-stack;}
 
-.content{font-family:'Karma' serif;}
+.content{font-family:$Karma-font-stack;}
 
 #content_1, #content_2, #content_3 {font-family:'Karma' serif;}
 button{
@@ -131,7 +133,7 @@ nav {
   }
 }
 p{
-	font-family:$Open-Sans-font-stack;
+	font-family:$Karma-font-stack;
 	font-weight:300;
 	font-size:17px;
 	padding:$more-padding;
@@ -179,6 +181,7 @@ font-family:$Karma-font-stack;
 
 .container-mixed{font-size:20px;}
 
+#about-page-content{font-family:$Karma-font-stack;}
 .about-column h3{
 	font-family: 'Helvetica Neue', sans-serif;
 	font-weight:200;
