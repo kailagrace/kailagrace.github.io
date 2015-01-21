@@ -439,6 +439,41 @@ window.attachEvent("onload", downloadJSAtOnload);
 else window.onload = downloadJSAtOnload;
 </script>
 
+<script> 
+    $(document).ready(function() {  
+    for ( var i = 1; i < 4; i++ ) {
+    document.getElementById("content_" + i).style.display = "none"; 
+     settab();
+     }
+    
+    });
+
+    function settab(){
+      var hash = window.location.hash;
+      var numberone = hash.charAt(1);
+      var numbertwo = hash.charAt(2);
+    var tabcontent = document.getElementById("content_" + numberone + numbertwo);
+     tabcontent.style.display = "block";
+    }
+  function changetab(newtab){
+      window.location.hash = (newtab);
+    }
+
+
+//show and hide content//
+  function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+    </script>
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <script src="src/scripts/ResponsiveMultiLevelMenu/js/modernizr.custom.js"></script>
@@ -480,41 +515,7 @@ else window.onload = downloadJSAtOnload;
        
   }
   </script>
-<script> 
-    $(document).ready(function() {  
-    for ( var i = 1; i < 12; i++ ) {
-    document.getElementById("content_" + i).style.display = "none"; 
-     settab();
-     }
-    
-    });
 
-    function settab(){
-      var hash = window.location.hash;
-      var numberone = hash.charAt(1);
-      var numbertwo = hash.charAt(2);
-    var tabcontent = document.getElementById("content_" + numberone + numbertwo);
-     tabcontent.style.display = "block";
-    }
-  function changetab(newtab){
-      window.location.hash = (newtab);
-    }
-
-
-//show and hide content//
-  function showHide(shID) {
-   if (document.getElementById(shID)) {
-      if (document.getElementById(shID+'-show').style.display != 'none') {
-         document.getElementById(shID+'-show').style.display = 'none';
-         document.getElementById(shID).style.display = 'block';
-      }
-      else {
-         document.getElementById(shID+'-show').style.display = 'inline';
-         document.getElementById(shID).style.display = 'none';
-      }
-   }
-}
-    </script>
 
   <!--/////////////////////////////////////-->
     <script src="src/scripts/ResponsiveMultiLevelMenu/js/jquery.dlmenu.js"></script>
