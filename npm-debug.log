@@ -1,14 +1,9 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '-g',
-1 verbose cli   '--save-dev',
-1 verbose cli   'reload' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'imageoptim-cli' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.34
-4 verbose cache add [ 'reload', null ]
-5 verbose cache add name=undefined spec="reload" args=["reload",null]
+4 verbose cache add [ 'imageoptim-cli', null ]
+5 verbose cache add name=undefined spec="imageoptim-cli" args=["imageoptim-cli",null]
 6 verbose parsed url { protocol: null,
 6 verbose parsed url   slashes: null,
 6 verbose parsed url   auth: null,
@@ -18,113 +13,166 @@
 6 verbose parsed url   hash: null,
 6 verbose parsed url   search: null,
 6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'reload',
-6 verbose parsed url   path: 'reload',
-6 verbose parsed url   href: 'reload' }
-7 silly lockFile d6e6e576-reload reload
-8 verbose lock reload /Users/Kaila/.npm/d6e6e576-reload.lock
-9 silly lockFile d6e6e576-reload reload
-10 silly lockFile d6e6e576-reload reload
-11 verbose addNamed [ 'reload', '' ]
+6 verbose parsed url   pathname: 'imageoptim-cli',
+6 verbose parsed url   path: 'imageoptim-cli',
+6 verbose parsed url   href: 'imageoptim-cli' }
+7 silly lockFile 2930c2eb-imageoptim-cli imageoptim-cli
+8 verbose lock imageoptim-cli /Users/Kaila/.npm/2930c2eb-imageoptim-cli.lock
+9 silly lockFile 2930c2eb-imageoptim-cli imageoptim-cli
+10 silly lockFile 2930c2eb-imageoptim-cli imageoptim-cli
+11 verbose addNamed [ 'imageoptim-cli', '' ]
 12 verbose addNamed [ null, '*' ]
-13 silly lockFile a7c17017-reload reload@
-14 verbose lock reload@ /Users/Kaila/.npm/a7c17017-reload.lock
-15 silly addNameRange { name: 'reload', range: '*', hasData: false }
-16 verbose request where is /reload
+13 silly lockFile 2010c03c-imageoptim-cli imageoptim-cli@
+14 verbose lock imageoptim-cli@ /Users/Kaila/.npm/2010c03c-imageoptim-cli.lock
+15 silly addNameRange { name: 'imageoptim-cli', range: '*', hasData: false }
+16 verbose request where is /imageoptim-cli
 17 verbose request registry https://registry.npmjs.org/
-18 verbose request id e9d2af06b03433a1
-19 verbose url raw /reload
-20 verbose url resolving [ 'https://registry.npmjs.org/', './reload' ]
-21 verbose url resolved https://registry.npmjs.org/reload
-22 verbose request where is https://registry.npmjs.org/reload
-23 info trying registry request attempt 1 at 11:25:32
-24 http GET https://registry.npmjs.org/reload
-25 http 200 https://registry.npmjs.org/reload
+18 verbose request id 5c0aea9646d0f5a3
+19 verbose url raw /imageoptim-cli
+20 verbose url resolving [ 'https://registry.npmjs.org/', './imageoptim-cli' ]
+21 verbose url resolved https://registry.npmjs.org/imageoptim-cli
+22 verbose request where is https://registry.npmjs.org/imageoptim-cli
+23 info trying registry request attempt 1 at 22:53:40
+24 http GET https://registry.npmjs.org/imageoptim-cli
+25 http 200 https://registry.npmjs.org/imageoptim-cli
 26 silly registry.get cb [ 200,
-26 silly registry.get   { date: 'Sat, 10 Jan 2015 16:25:32 GMT',
+26 silly registry.get   { date: 'Wed, 21 Jan 2015 03:53:40 GMT',
 26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-26 silly registry.get     etag: '"61GH42QOZAQLUZ51WN3CD5N1G"',
+26 silly registry.get     etag: '"4X1M13VJYTQXJ1F8FF3Q8IGU"',
 26 silly registry.get     'content-type': 'application/json',
 26 silly registry.get     'cache-control': 'max-age=60',
-26 silly registry.get     'content-length': '15759',
+26 silly registry.get     'content-length': '51188',
 26 silly registry.get     'accept-ranges': 'bytes',
 26 silly registry.get     via: '1.1 varnish',
 26 silly registry.get     age: '0',
-26 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+26 silly registry.get     'x-served-by': 'cache-jfk1033-JFK',
 26 silly registry.get     'x-cache': 'MISS',
 26 silly registry.get     'x-cache-hits': '0',
-26 silly registry.get     'x-timer': 'S1420907132.114292,VS0,VE345',
+26 silly registry.get     'x-timer': 'S1421812420.504990,VS0,VE95',
 26 silly registry.get     vary: 'Accept',
 26 silly registry.get     'keep-alive': 'timeout=10, max=50',
 26 silly registry.get     connection: 'Keep-Alive' } ]
-27 silly addNameRange number 2 { name: 'reload', range: '*', hasData: true }
-28 silly addNameRange versions [ 'reload', [ '0.0.0', '0.0.1', '0.0.2', '0.1.0' ] ]
-29 verbose addNamed [ 'reload', '0.1.0' ]
-30 verbose addNamed [ '0.1.0', '0.1.0' ]
-31 silly lockFile e8699289-reload-0-1-0 reload@0.1.0
-32 verbose lock reload@0.1.0 /Users/Kaila/.npm/e8699289-reload-0-1-0.lock
-33 silly lockFile 5353adea-pmjs-org-reload-reload-0-1-0-tgz https://registry.npmjs.org/reload/-/reload-0.1.0.tgz
-34 verbose lock https://registry.npmjs.org/reload/-/reload-0.1.0.tgz /Users/Kaila/.npm/5353adea-pmjs-org-reload-reload-0-1-0-tgz.lock
-35 verbose addRemoteTarball [ 'https://registry.npmjs.org/reload/-/reload-0.1.0.tgz',
-35 verbose addRemoteTarball   'f3a4fcd64cd72ec2a861a8cfa5195ef17c034e31' ]
-36 info retry fetch attempt 1 at 11:25:32
-37 verbose fetch to= /var/folders/_7/t5fxryl53kn8lw1dc13npw8c0000gn/T/npm-20544-PUayPIFN/registry.npmjs.org/reload/-/reload-0.1.0.tgz
-38 http GET https://registry.npmjs.org/reload/-/reload-0.1.0.tgz
-39 http 200 https://registry.npmjs.org/reload/-/reload-0.1.0.tgz
-40 silly lockFile 5353adea-pmjs-org-reload-reload-0-1-0-tgz https://registry.npmjs.org/reload/-/reload-0.1.0.tgz
-41 silly lockFile 5353adea-pmjs-org-reload-reload-0-1-0-tgz https://registry.npmjs.org/reload/-/reload-0.1.0.tgz
-42 silly lockFile e8699289-reload-0-1-0 reload@0.1.0
-43 silly lockFile e8699289-reload-0-1-0 reload@0.1.0
-44 silly lockFile a7c17017-reload reload@
-45 silly lockFile a7c17017-reload reload@
-46 silly resolved [ { name: 'reload',
-46 silly resolved     version: '0.1.0',
-46 silly resolved     description: 'Node.js module to refresh and reload your code in your browser when your code changes. No browser plugins required.',
-46 silly resolved     repository: { type: 'git', url: 'git@github.com:jprichardson/reload.git' },
-46 silly resolved     keywords: [ 'reload', 'refresh', 'http', 'express', 'development' ],
-46 silly resolved     author: { name: 'JP Richardson', email: 'jprichardson@gmail.com' },
+27 silly addNameRange number 2 { name: 'imageoptim-cli', range: '*', hasData: true }
+28 silly addNameRange versions [ 'imageoptim-cli',
+28 silly addNameRange   [ '1.0.0',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.1.3',
+28 silly addNameRange     '1.1.4',
+28 silly addNameRange     '1.1.5',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.3.2',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '1.4.2',
+28 silly addNameRange     '1.4.4',
+28 silly addNameRange     '1.4.5',
+28 silly addNameRange     '1.6.8',
+28 silly addNameRange     '1.6.12',
+28 silly addNameRange     '1.6.13',
+28 silly addNameRange     '1.6.14',
+28 silly addNameRange     '1.6.15',
+28 silly addNameRange     '1.6.18',
+28 silly addNameRange     '1.6.19',
+28 silly addNameRange     '1.7.1',
+28 silly addNameRange     '1.7.2',
+28 silly addNameRange     '1.7.3',
+28 silly addNameRange     '1.7.9',
+28 silly addNameRange     '1.7.10',
+28 silly addNameRange     '1.7.11',
+28 silly addNameRange     '1.11.4' ] ]
+29 verbose addNamed [ 'imageoptim-cli', '1.11.4' ]
+30 verbose addNamed [ '1.11.4', '1.11.4' ]
+31 silly lockFile 97ce4215-imageoptim-cli-1-11-4 imageoptim-cli@1.11.4
+32 verbose lock imageoptim-cli@1.11.4 /Users/Kaila/.npm/97ce4215-imageoptim-cli-1-11-4.lock
+33 silly lockFile f192e20b-im-cli-imageoptim-cli-1-11-4-tgz https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz
+34 verbose lock https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz /Users/Kaila/.npm/f192e20b-im-cli-imageoptim-cli-1-11-4-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz',
+35 verbose addRemoteTarball   '6ffc048a5c6a21e5da45fa7c7f0a3d65240f230d' ]
+36 info retry fetch attempt 1 at 22:53:40
+37 verbose fetch to= /var/folders/_7/t5fxryl53kn8lw1dc13npw8c0000gn/T/npm-10562-1szQY5lr/registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz
+38 http GET https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz
+39 http 200 https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz
+40 silly lockFile f192e20b-im-cli-imageoptim-cli-1-11-4-tgz https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz
+41 silly lockFile f192e20b-im-cli-imageoptim-cli-1-11-4-tgz https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz
+42 silly lockFile 97ce4215-imageoptim-cli-1-11-4 imageoptim-cli@1.11.4
+43 silly lockFile 97ce4215-imageoptim-cli-1-11-4 imageoptim-cli@1.11.4
+44 silly lockFile 2010c03c-imageoptim-cli imageoptim-cli@
+45 silly lockFile 2010c03c-imageoptim-cli imageoptim-cli@
+46 silly resolved [ { name: 'imageoptim-cli',
+46 silly resolved     author: { name: 'Jamie Mason', email: 'siunmaru@gmail.com' },
+46 silly resolved     description: 'Automates ImageOptim, ImageAlpha, and JPEGmini for Mac to make batch optimisation of images part of your automated build process.',
+46 silly resolved     homepage: 'https://github.com/JamieMason/ImageOptim-CLI',
+46 silly resolved     bugs: { url: 'https://github.com/JamieMason/ImageOptim-CLI/issues' },
+46 silly resolved     main: './bin/imageOptim',
+46 silly resolved     version: '1.11.4',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/JamieMason/ImageOptim-CLI.git' },
+46 silly resolved     bin:
+46 silly resolved      { imageOptim: 'bin/imageOptim',
+46 silly resolved        imageOptimAppleScriptLib: 'bin/imageOptimAppleScriptLib',
+46 silly resolved        imageOptimBashLib: 'bin/imageOptimBashLib',
+46 silly resolved        pngquant: 'bin/pngquant' },
 46 silly resolved     licenses: [ [Object] ],
-46 silly resolved     dependencies:
-46 silly resolved      { sockjs: '~0.3.5',
-46 silly resolved        supervisor: '~0.5.6',
-46 silly resolved        commander: '~2.0.0',
-46 silly resolved        express: '~3.4.0',
-46 silly resolved        'cli-color': '~0.2.3',
-46 silly resolved        open: '0.0.4',
-46 silly resolved        death: '~0.1.0' },
-46 silly resolved     devDependencies: {},
-46 silly resolved     main: './lib/reload.js',
-46 silly resolved     scripts: { test: 'mocha test' },
-46 silly resolved     bin: { reload: './bin/reload' },
-46 silly resolved     readme: 'reload\n=======\n\nRefresh and reload your code in your browser when your code changes. No browser plugins required. Use with Node.js if you like.\n\n\n\nWhy?\n----\n\nRestarting your Http server and refreshing your browser is annoying.\n\n\n\nInstallation\n------------\n\n    npm install [-g] [--save-dev] reload\n\n\n\nExample for Node.js and browser development\n--------------------------------------------\n\nUse in conjunction with [supervisor](https://github.com/isaacs/node-supervisor), [nodemon](https://github.com/remy/nodemon), or [forever](https://github.com/nodejitsu/forever).\n\nI recommend `supervisor`, since `nodedemon` time to poll for file changes is too slow and not configurable. Supervisor will feel fast. `forever` tries to do too much. Whenever I look at the docs, I get frustrated and give up.\n\n\n**server.js:**\n```javascript\nvar express = require(\'express\')\n  , http = require(\'http\')\n  , path = require(\'path\')\n  , reload = require(\'reload\')\n\nvar app = express()\n\nvar publicDir = path.join(__dirname, \'public\')\n\napp.configure(function() {\n  app.set(\'port\', process.env.PORT || 3000)\n  app.use(express.logger(\'dev\'))\n  app.use(express.bodyParser()) //parses json, multi-part (file), url-encoded\n  app.use(app.router) //need to be explicit, (automatically adds it if you forget)\n  app.use(express.static(clientDir)) //should cache static assets\n})\n\napp.get(\'/\', function(req, res) {\n  res.sendfile(path.join(publicDir, \'index.html\'))\n})\n\nvar server = http.createServer(app)\n\n//reload code here\nreload(server, app)\n\nserver.listen(app.get(\'port\'), function(){\n  console.log("Web server listening on port " + app.get(\'port\'));\n});\n```\n\n**public/index.html:** (very valid HTML5, watch the YouTube video)\n```html\n<!-- \n  watch this: http://www.youtube.com/watch?v=WxmcDoAxdoY \n-->\n<!doctype html>\n<meta charset="utf-8">\n<title>My sweet app!</title>\n\n<!-- all you have to do is include the reload script -->\n<script src="/reload/reload.js"></script>\n\n<h1>Hello!</h1>\n```\n\ninstall supervisor:\n```\nnpm install -g supervisor\n```\n\nreload on any html or js file change:\n```\nsupervisor -e \'html|js\' node server.js\n```\n\n\n\nExample for browser development only\n-------------------------------------\n\nYou should install `reload` globally like `npm install -g reload`. Then you can use the `reload` command in your directory without modifying any of your HTML.\n\nUsage:\n\n```\n\nUsage: reload [options]\n\nOptions:\n\n  -h, --help               output usage information\n  -V, --version            output the version number\n  -b, --browser            Open in the browser automatically.\n  -d, --dir [dir]          The directory to serve up. Defaults to current dir.\n  -e, --exts [extensions]  Extensions separated by commas or pipes. Defaults to html,js,css.\n  -p, --port [port]        The port to bind to. Can be set with PORT env variable as well. Defaults to 8080\n  -t, --time [delay]       How long (ms) should the browser wait before reconnecting? Defaults to 300 ms.\n\n```\n\nNavigate to your html directory:\n\n    reload -b\n\nthis will open your `index.html` file in the browser. Any changes that you make will now reload in the browser. You don\'t need to modify your HTML at all.\n\n\n\nHow does it work?\n-----------------\n\nIt\'s actually stupidly simple. We leverage `supervisor` to restart the server if any file changes. The client side keeps a websocket open, once the websocket closes, the client sets a timeout to reload in approximately 300 ms. Simple huh?\n\n\n\nAPI\n---\n\n### reload(httpServer, expressApp, [timeout_millis])\n\n- `httpServer`: The Node.js http server from the module `http`.\n- `expressApp`: The express app. It may work with other frameworks, or even with Connect. At this time, it\'s only been tested with Express.\n- `timeout_millis`: The client side refresh time in milliseconds. Default is `300`.\n\n\n\nLicense\n-------\n\n(MIT License)\n\nCopyright 2013, JP Richardson  <jprichardson@gmail.com>\n\n\n',
-46 silly resolved     readmeFilename: 'README.md',
-46 silly resolved     _id: 'reload@0.1.0',
+46 silly resolved     keywords:
+46 silly resolved      [ 'advpng',
+46 silly resolved        'compress',
+46 silly resolved        'gifsicle',
+46 silly resolved        'imagealpha',
+46 silly resolved        'imagemin',
+46 silly resolved        'imageoptim',
+46 silly resolved        'images',
+46 silly resolved        'jpegmini',
+46 silly resolved        'jpegoptim',
+46 silly resolved        'jpegtran',
+46 silly resolved        'image optimisation',
+46 silly resolved        'optimise images',
+46 silly resolved        'image compression',
+46 silly resolved        'compress images',
+46 silly resolved        'optipng',
+46 silly resolved        'pngcrush',
+46 silly resolved        'pngquant',
+46 silly resolved        'pngout',
+46 silly resolved        'smushit',
+46 silly resolved        'tinypng' ],
+46 silly resolved     devDependencies:
+46 silly resolved      { grunt: '^0.4.5',
+46 silly resolved        'grunt-cli': '^0.1.13',
+46 silly resolved        'grunt-contrib-concat': '^0.5.0',
+46 silly resolved        'grunt-contrib-watch': '^0.6.1' },
+46 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+46 silly resolved     gitHead: '701e2866ba2a444f58a4a4ead0a2330f2c9e18da',
+46 silly resolved     _id: 'imageoptim-cli@1.11.4',
+46 silly resolved     scripts: {},
+46 silly resolved     _shasum: '6ffc048a5c6a21e5da45fa7c7f0a3d65240f230d',
+46 silly resolved     _from: 'imageoptim-cli@',
+46 silly resolved     _npmVersion: '2.1.6',
+46 silly resolved     _nodeVersion: '0.10.23',
+46 silly resolved     _npmUser: { name: 'fold_left', email: 'siunmaru@gmail.com' },
+46 silly resolved     maintainers: [ [Object] ],
 46 silly resolved     dist:
-46 silly resolved      { shasum: 'f3a4fcd64cd72ec2a861a8cfa5195ef17c034e31',
-46 silly resolved        tarball: 'http://registry.npmjs.org/reload/-/reload-0.1.0.tgz' },
-46 silly resolved     _from: 'reload@',
-46 silly resolved     _npmVersion: '1.2.17',
-46 silly resolved     _npmUser: { name: 'jp', email: 'jprichardson@gmail.com' },
-46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved      { shasum: '6ffc048a5c6a21e5da45fa7c7f0a3d65240f230d',
+46 silly resolved        tarball: 'http://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz' },
 46 silly resolved     directories: {},
-46 silly resolved     _shasum: 'f3a4fcd64cd72ec2a861a8cfa5195ef17c034e31',
-46 silly resolved     _resolved: 'https://registry.npmjs.org/reload/-/reload-0.1.0.tgz' } ]
-47 info install reload@0.1.0 into /usr/local/lib
-48 info installOne reload@0.1.0
-49 verbose lib/node_modules/reload unbuild
-50 verbose tar unpack /Users/Kaila/.npm/reload/0.1.0/package.tgz
-51 silly lockFile 9abbb566-sr-local-lib-node-modules-reload tar:///usr/local/lib/node_modules/reload
-52 verbose lock tar:///usr/local/lib/node_modules/reload /Users/Kaila/.npm/9abbb566-sr-local-lib-node-modules-reload.lock
-53 silly lockFile af7cb9a7-ila-npm-reload-0-1-0-package-tgz tar:///Users/Kaila/.npm/reload/0.1.0/package.tgz
-54 verbose lock tar:///Users/Kaila/.npm/reload/0.1.0/package.tgz /Users/Kaila/.npm/af7cb9a7-ila-npm-reload-0-1-0-package-tgz.lock
+46 silly resolved     _resolved: 'https://registry.npmjs.org/imageoptim-cli/-/imageoptim-cli-1.11.4.tgz' } ]
+47 info install imageoptim-cli@1.11.4 into /usr/local/lib
+48 info installOne imageoptim-cli@1.11.4
+49 verbose lib/node_modules/imageoptim-cli unbuild
+50 verbose tar unpack /Users/Kaila/.npm/imageoptim-cli/1.11.4/package.tgz
+51 silly lockFile 5d0144f2--lib-node-modules-imageoptim-cli tar:///usr/local/lib/node_modules/imageoptim-cli
+52 verbose lock tar:///usr/local/lib/node_modules/imageoptim-cli /Users/Kaila/.npm/5d0144f2--lib-node-modules-imageoptim-cli.lock
+53 silly lockFile 765a1795-mageoptim-cli-1-11-4-package-tgz tar:///Users/Kaila/.npm/imageoptim-cli/1.11.4/package.tgz
+54 verbose lock tar:///Users/Kaila/.npm/imageoptim-cli/1.11.4/package.tgz /Users/Kaila/.npm/765a1795-mageoptim-cli-1-11-4-package-tgz.lock
 55 silly gunzTarPerm modes [ '755', '644' ]
-56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/reload'
-56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/reload']
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/imageoptim-cli'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/imageoptim-cli']
 56 error   errno: 3,
 56 error   code: 'EACCES',
-56 error   path: '/usr/local/lib/node_modules/reload',
+56 error   path: '/usr/local/lib/node_modules/imageoptim-cli',
 56 error   fstream_type: 'Directory',
-56 error   fstream_path: '/usr/local/lib/node_modules/reload',
+56 error   fstream_path: '/usr/local/lib/node_modules/imageoptim-cli',
 56 error   fstream_class: 'DirWriter',
 56 error   fstream_stack:
 56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
@@ -132,17 +180,17 @@
 56 error      'Object.oncomplete (fs.js:108:15)' ] }
 57 error Please try running this command again as root/Administrator.
 58 error System Darwin 14.0.0
-59 error command "node" "/usr/local/bin/npm" "install" "-g" "--save-dev" "reload"
-60 error cwd /Users/Kaila/Personal-site/kailagrace.github.io
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "imageoptim-cli"
+60 error cwd /Users/Kaila/kailagrace.github.io
 61 error node -v v0.10.34
 62 error npm -v 1.4.28
-63 error path /usr/local/lib/node_modules/reload
-64 error fstream_path /usr/local/lib/node_modules/reload
+63 error path /usr/local/lib/node_modules/imageoptim-cli
+64 error fstream_path /usr/local/lib/node_modules/imageoptim-cli
 65 error fstream_type Directory
 66 error fstream_class DirWriter
 67 error code EACCES
 68 error errno 3
-69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/reload'
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/imageoptim-cli'
 70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
 70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
 70 error fstream_stack Object.oncomplete (fs.js:108:15)
