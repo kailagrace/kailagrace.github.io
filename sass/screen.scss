@@ -69,7 +69,6 @@ $link-color:#b6d4d0;
 .no-scroll{overflow-y:hidden;}
 
 
-
 /*ASSIGN VARIABLES*/
 
 /*Main*/
@@ -366,7 +365,8 @@ left:10px;}
 
 /* =====WORK PAGE SPECIFIC STYLES ===========*/
 
-
+.pages{width:100%;
+float:left;}
 
 
 .work-page{margin-top:20px;
@@ -553,7 +553,7 @@ width:auto;
 
 
 @media screen and (max-width:815px) and (min-width:710px) {
-
+.show-mobile{display:none;}
 .hidden-desktop-nav{display:none;}
     #social-media{
 display:flex;
@@ -581,7 +581,7 @@ width:auto;
 
 @media screen and (max-width:870px) and (min-width:815px) {
 .hidden-desktop-nav{display:none;}
-
+.show-mobile{display:none;}
     #social-media{
 display:flex;
 flex-direction:row;
