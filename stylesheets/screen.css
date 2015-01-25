@@ -182,7 +182,7 @@ p {
   font-family: "Karma" serif;
   font-weight: 300;
   font-size: 17px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 0px;
 }
 
 /* line 142, ../sass/screen.scss */
