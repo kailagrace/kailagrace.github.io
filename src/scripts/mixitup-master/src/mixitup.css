@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+#Container .mix{
+  display: none;
+}
 
 body, button{
   font-family: 'Helvetica Neue', arial, sans-serif;
