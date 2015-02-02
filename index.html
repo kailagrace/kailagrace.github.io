@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <title>Kaila Manca's Personal Website</title>
     <meta name="description" content="Personal website and User Experience (UX) and Web Design/Development Portfolio for Kaila Manca. Includes information about Kaila, information to get in contact, and examples of past work. Kaila has been linked to the University of Connecticut, Tyler Technologies, and Columbia University.">
-    <meta name="author" content="kaila g. manca">
+    <meta name="author" content="Kaila G. Manca">
     <meta name="keywords" content="Kaila Manca, Personal Website, Portfolio, UX, UI, User-Experience, User-Interface, Web, Design, Development, Digital, HTML, CSS, JavaScript, JS, JQuery, University of Connecticut, UConn, California, Connecticut, Maine, Experienced, Tech, Technology, About, Work, Contact, Information">
 
     <!-- Mobile Specific Metas
@@ -74,7 +74,7 @@ header#call-to-action{max-height:100px;}
 <nav id="main-nav" class="make-me-a-panel" data-direction="right" data-distanceX="225px" data-clickSelector=".toggle-nav" data-touchSelector=".toggle-nav">
 
         <div id="nested-demo">
-            <a href="https://github.com/scotch-io/Scotch-Panels/issues">UConn Comm</a>
+            <a href="https://github.com/scotch-io/Scotch-Panels/issues"><span itemprop="affiliation">UConn Comm</span></a>
             <a href="http://twitter.com/nickforthought">Wedding Website</a>
             <a href="https://github.com/scotch-io/Scotch-Panels">Other Projects</a>
             <a href="https://github.com/scotch-io/Scotch-Panels">Cycling Team</a>
@@ -122,7 +122,9 @@ header#call-to-action{max-height:100px;}
         <div class="eight columns">
           <div id="header-container">
           <a href="index.html"><img id="logo-img" class="u-pull-left" alt="my personal brand logo- my initials, kgm" src="src/images/Logo.png"></a>
-          <a href="index.html"><h1 class="tk-futura-pt u-max-full-width right" id="page-heading">Kaila G. Manca</h1></a>
+          <div itemscope itemtype="http://data-vocabulary.org/Person"> 
+          <a itemprop="url" href="index.html"><h1 class="tk-futura-pt u-max-full-width right" id="page-heading"><span itemprop="name">Kaila G. Manca</span></h1></a>
+         </div>
         </div>
         </div>
         <div class="four columns">
@@ -276,8 +278,10 @@ header#call-to-action{max-height:100px;}
 
 <div class="about-page-content">
 <div class="four-columns">
-    <p>Hi there, I’m Kaila. I am a User Interface Designer, and I make my products functional, memorable, usable, &amp; beautiful. I am passionate about my work, always motivated, and I take initiative. I love to learn, design, and code. I’m a left coaster, currently living life in the East with my fantastic fiance, Billy, and our mountain bikes. I am passionate about learning, I love adventure, &amp; I can’t turn down a challenge. When I'm not coding or creating my own digital designs, I can often be found doing one of the three R's: reading, running, or riding my bicycle. I enjoy cheesy puns, cooking 'experiment-style', NPR, pine forests, coffee dates, and dreaming of one day being a dog-owner. 
-     I graduated from the University of Connecticut in 2015, with a BS in Human-Computer Interaction, a major I created. In the past, I’ve worked at Columbia University, the University of Connecticut, and Tyler Technologies. I love meeting new people, so feel free to reach out to me and <a href="mailto:hello@kailagrace.com">say hello.</a></p>
+  <div itemscope itemtype="http://data-vocabulary.org/Person"> 
+    <p>Hi, I’m <span itemprop="name">Kaila Manca</span>. I am a <span itemprop="title">Web and User Experience Designer and Developer</span>, and I make my products functional, memorable, usable, &amp; beautiful. I am passionate about my work, always motivated, and I take initiative. I love to learn, design, and code. I’m a left coaster, currently living life in the East with my fantastic fiance, Billy, and our mountain bikes. I am passionate about learning, I love adventure, &amp; I can’t turn down a challenge. When I'm not coding or creating my own digital designs, I can often be found doing one of the three R's: reading, running, or riding my bicycle. I enjoy cheesy puns, cooking 'experiment-style', NPR, pine forests, coffee dates, and dreaming of one day being a dog-owner. 
+     I graduated from <span itemprop="affiliation">the University of Connecticut</span> in 2015, with a BS in Human-Computer Interaction, a major I created. In the past, I’ve worked at <span itemprop="affiliation">Columbia University</span>, <span itemprop="affiliation">the University of Connecticut</span>, and <span itemprop="affiliation">Tyler Technologies</span>. I love meeting new people, so feel free to reach out to me and <a href="mailto:hello@kailagrace.com">say hello.</a></p>
+   </div>
 
 </div>
 </div>
